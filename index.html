@@ -72,10 +72,10 @@
 
     <div class="max-w-7xl mx-auto px-4 py-2 sm:py-2.5 flex items-center justify-between gap-3 sm:gap-4">
       <!-- Left: State Emblem + Maharashtra Seal + Official Kumbh Logo -->
-      <div class="flex items-center gap-2 sm:gap-4 flex-1 min-w-0">
+      <div class="flex items-center gap-1.5 sm:gap-4 flex-1 min-w-0">
         <!-- Ashoka Lion Capital (Emblem of India - New Gold Emblem) -->
         <div class="flex-shrink-0" title="State Emblem of India">
-          <img src="./public/images/emb.jpg" alt="State Emblem of India" class="h-10 sm:h-14 w-auto rounded object-contain drop-shadow">
+          <img src="./public/images/emb.jpg" alt="State Emblem of India" class="h-9 sm:h-14 w-auto rounded object-contain drop-shadow">
         </div>
 
         <!-- Government of Maharashtra Seal -->
@@ -85,15 +85,15 @@
 
         <!-- Official Kumbh Mela Logo -->
         <div class="flex-shrink-0" title="Official Logo of Nashik Kumbh Mela">
-          <img src="./public/images/kumbh-mela-logo.png" alt="Official Nashik Kumbh Mela Logo" class="h-10 sm:h-16 w-auto drop-shadow">
+          <img src="./public/images/kumbh-mela-logo.png" alt="Official Nashik Kumbh Mela Logo" class="h-9 sm:h-16 w-auto drop-shadow">
         </div>
 
         <!-- Official Title Block -->
-        <div class="border-l border-slate-700 pl-2.5 sm:pl-4 min-w-0">
-          <div class="text-[9px] sm:text-xs text-amber-300 font-extrabold uppercase tracking-wider truncate" data-i18n="header.govSubtitle">
+        <div class="border-l border-slate-700 pl-2 sm:pl-4 min-w-0 flex-1">
+          <div class="text-[8px] sm:text-xs text-amber-300 font-extrabold uppercase tracking-wider truncate sm:whitespace-normal" data-i18n="header.govSubtitle">
             महाराष्ट्र शासन • Government of Maharashtra
           </div>
-          <h1 class="text-sm sm:text-base lg:text-lg font-black tracking-tight leading-tight text-white drop-shadow-sm truncate sm:whitespace-normal" data-i18n="header.portalTitle">
+          <h1 class="text-[11px] sm:text-base lg:text-lg font-black tracking-tight leading-tight text-white drop-shadow-sm whitespace-normal break-words" data-i18n="header.portalTitle">
             नाशिक-त्र्यंबकेश्वर सिंहस्थ कुंभमेळा २०२७
           </h1>
           <div class="text-[10px] sm:text-xs text-slate-300 font-medium tracking-wide hidden sm:block" data-i18n="header.authoritySub">
@@ -110,16 +110,16 @@
         </a>
 
         <!-- Search Button (Identical Dimensions, Height, Radius & Typography) -->
-        <button id="header-search-btn" onclick="window.openSearchModal && window.openSearchModal()" class="flex items-center gap-1.5 sm:gap-2 bg-slate-900/90 hover:bg-slate-800 text-white font-bold text-xs sm:text-sm px-2.5 sm:px-3.5 py-2 sm:py-2.5 rounded-lg border border-slate-700 shadow-sm transition tap-target" aria-label="Search portal" title="Search portal">
-          <svg class="w-4 h-4 flex-shrink-0 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-          <span data-i18n="nav.searchBtn">शोधा</span>
+        <button id="header-search-btn" onclick="window.openSearchModal && window.openSearchModal()" class="flex items-center gap-1 sm:gap-2 bg-slate-900/90 hover:bg-slate-800 text-white font-bold text-xs sm:text-sm px-2 sm:px-3.5 py-1.5 sm:py-2.5 rounded-lg border border-slate-700 shadow-sm transition tap-target" aria-label="Search portal" title="Search portal">
+          <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <span class="hidden sm:inline" data-i18n="nav.searchBtn">शोधा</span>
         </button>
 
         <!-- KumbhDoot In-Page AI Assistant Button (Identical Dimensions, Height, Radius & Typography) -->
-        <button id="header-kumbhdoot-btn" onclick="window.openKumbhDootAssistant('general')" class="trigger-kumbhdoot-modal flex items-center gap-1.5 sm:gap-2 bg-kumbhdoot-cta hover:bg-kumbhdoot-ctaHover text-white font-bold text-xs sm:text-sm px-2.5 sm:px-3.5 py-2 sm:py-2.5 rounded-lg shadow-sm transition tap-target" title="Open KumbhDoot AI Pilgrim Assistant">
-          <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"/></svg>
+        <button id="header-kumbhdoot-btn" onclick="window.openKumbhDootAssistant('general')" class="trigger-kumbhdoot-modal flex items-center gap-1 sm:gap-2 bg-kumbhdoot-cta hover:bg-kumbhdoot-ctaHover text-white font-bold text-xs sm:text-sm px-2 sm:px-3.5 py-1.5 sm:py-2.5 rounded-lg shadow-sm transition tap-target" title="Open KumbhDoot AI Pilgrim Assistant">
+          <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"/></svg>
           <span class="btn-label hidden sm:inline" data-i18n="kumbhdootCta.label">कुंभदूत AI सहाय्यक</span>
-          <span class="btn-label-mobile sm:hidden" data-i18n="kumbhdootCta.mobileLabel">कुंभदूत AI</span>
+          <span class="btn-label-mobile sm:hidden text-[10px]" data-i18n="kumbhdootCta.mobileLabel">कुंभदूत AI</span>
         </button>
       </div>
     </div>
