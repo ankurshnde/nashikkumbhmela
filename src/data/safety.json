@@ -1,0 +1,108 @@
+{
+  "emergencyNumbers": [
+    {
+      "service_mr": "एकात्मिक आपत्कालीन पोलीस",
+      "service_hi": "एकीकृत आपातकालीन पुलिस",
+      "service_en": "National Emergency Service (Police)",
+      "number": "112",
+      "available": "24x7 टोल-फ्री",
+      "badge": "Police / Fire / Health",
+      "source": "State Emergency Response System (To be verified)",
+      "lastUpdated": "18/10/2026",
+      "available_mr": "२४x७ टोल-फ्री",
+      "available_hi": "24x7 टोल-फ्री",
+      "available_en": "24x7 Toll-Free"
+    },
+    {
+      "service_mr": "मोफत शासकीय ॲम्ब्युलन्स",
+      "service_hi": "निःशुल्क सरकारी एम्बुलेंस",
+      "service_en": "Free Emergency Ambulance Service",
+      "number": "108",
+      "available": "24x7 टोल-फ्री",
+      "badge": "Medical ICU / BLS",
+      "source": "Maharashtra Emergency Medical Services (To be verified)",
+      "lastUpdated": "18/10/2026",
+      "available_mr": "२४x७ टोल-फ्री",
+      "available_hi": "24x7 टोल-फ्री",
+      "available_en": "24x7 Toll-Free"
+    },
+    {
+      "service_mr": "जिल्हा आपत्ती व्यवस्थापन व नियंत्रण कक्ष",
+      "service_hi": "जिला आपदा प्रबंधन एवं नियंत्रण कक्ष",
+      "service_en": "District Disaster Management & Control Room",
+      "number": "1077 / 0253-2305233",
+      "available": "24x7 बहुभाषिक",
+      "badge": "Simhastha Command",
+      "source": "District Disaster Management Authority, Nashik",
+      "lastUpdated": "18/10/2026",
+      "available_mr": "२४x७ टोल-फ्री",
+      "available_hi": "24x7 टोल-फ्री",
+      "available_en": "24x7 Toll-Free"
+    },
+    {
+      "service_mr": "महिला सुरक्षा व निर्भया पथक",
+      "service_hi": "महिला सुरक्षा एवं निर्भया दल",
+      "service_en": "Women Safety & Nirbhaya Squad",
+      "number": "1091",
+      "available": "24x7 टोल-फ्री",
+      "badge": "Women Safety",
+      "source": "Maharashtra Police (To be verified)",
+      "lastUpdated": "18/10/2026",
+      "available_mr": "२४x७ टोल-फ्री",
+      "available_hi": "24x7 टोल-फ्री",
+      "available_en": "24x7 Toll-Free"
+    },
+    {
+      "service_mr": "बाल संरक्षण व हरवलेली मुले मदत",
+      "service_hi": "बाल संरक्षण एवं लापता बच्चे हेल्पलाइन",
+      "service_en": "Childline & Lost Child Help",
+      "number": "1098",
+      "available": "24x7 टोल-फ्री",
+      "badge": "Childline",
+      "source": "Ministry of Women & Child Development (To be verified)",
+      "lastUpdated": "18/10/2026",
+      "available_mr": "२४x७ टोल-फ्री",
+      "available_hi": "24x7 टोल-फ्री",
+      "available_en": "24x7 Toll-Free"
+    },
+    {
+      "service_mr": "जिल्हा आपत्ती व्यवस्थापन कक्ष",
+      "service_hi": "जिला आपदा प्रबंधन प्रकोष्ठ",
+      "service_en": "District Disaster Management",
+      "number": "1077",
+      "available": "24x7 टोल-फ्री",
+      "badge": "Disaster Response",
+      "source": "State Disaster Management (To be verified)",
+      "lastUpdated": "18/10/2026",
+      "available_mr": "२४x७ टोल-फ्री",
+      "available_hi": "24x7 टोल-फ्री",
+      "available_en": "24x7 Toll-Free"
+    }
+  ],
+  "womenSafety": [
+    {
+      "title_mr": "पिंक पोलीस मदत केंद्र (Pink Booths)",
+      "title_hi": "पिंक पुलिस सहायता केंद्र (Pink Booths)",
+      "title_en": "Pink Police Help Hubs (All-Women Staff)",
+      "desc_mr": "सर्व प्रमुख घाटांवर महिला पोलीस अधिकाऱ्यांची स्वतंत्र मदत केंद्रे, जिथे महिला भाविकांना त्वरित मदत मिळेल.",
+      "desc_hi": "सभी प्रमुख घाटों पर महिला पुलिसकर्मियों द्वारा संचालित विशेष केंद्र, जहां त्वरित सहायता उपलब्ध है।",
+      "desc_en": "Dedicated all-women staffed police kiosks at every bathing ghat providing immediate assistance and security."
+    },
+    {
+      "title_mr": "हिरकणी कक्ष (माता व बाल संगोपन)",
+      "title_hi": "हिरकणी कक्ष (माता एवं शिशु देखभाल)",
+      "title_en": "Hirkani Rooms (Nursing & Infant Care Booths)",
+      "desc_mr": "स्तनपान करणाऱ्या मातांसाठी व लहान बालकांच्या काळजीसाठी स्वच्छ, सुरक्षित आणि पडद्याची स्वतंत्र व्यवस्था.",
+      "desc_hi": "स्तनपान कराने वाली माताओं एवं शिशुओं की देखभाल हेतु सुरक्षित, स्वच्छ और निजी कक्ष व्यवस्था।",
+      "desc_en": "Dignified, clean, private nursing booths equipped with baby changing counters, hot water, and sanitizers."
+    },
+    {
+      "title_mr": "सुरक्षित महिला चेंजिंग रूम व बायो-टॉयलेट्स",
+      "title_hi": "सुरक्षित महिला चेंजिंग रूम व बायो-टॉयलेट",
+      "title_en": "Safe Women Changing Rooms & Dedicated Sanity Blocks",
+      "desc_mr": "स्नानानंतर कपडे बदलण्यासाठी १००+ वॉटरप्रूफ आणि उच्च सुरक्षेची बंदिस्त चेंजिंग रूम्स.",
+      "desc_hi": "स्नान उपरांत वस्त्र बदलने हेतु 100+ वाटरप्रूफ एवं उच्च सुरक्षा युक्त चेंजिंग कक्ष।",
+      "desc_en": "100+ waterproof, well-lit changing cabins guarded by female wardens along the riverbanks."
+    }
+  ]
+}

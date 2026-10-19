@@ -1,0 +1,30 @@
+{
+  "name": "kumbhdoot-nashik-kumbh-mela-2027",
+  "version": "1.0.0",
+  "description": "Initial UI prototype for the official-style website of the Nashik-Trimbakeshwar Simhastha Kumbh Mela 2027",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/styles/input.css -o ./dist/output.css --minify",
+    "watch:css": "tailwindcss -i ./src/styles/input.css -o ./dist/output.css --watch",
+    "serve": "serve . -l 3000",
+    "dev": "serve . -l 3000",
+    "start": "serve . -l 3000"
+  },
+  "keywords": [
+    "kumbhdoot",
+    "simhastha-2027",
+    "nashik-kumbh-mela",
+    "gigw-3.0",
+    "wcag-2.1-aa",
+    "government-portal-design"
+  ],
+  "author": "KumbhDoot Product & Engineering Team",
+  "license": "CC-BY-4.0",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "puppeteer-core": "^25.14.0",
+    "serve": "^14.2.4",
+    "tailwindcss": "^3.4.17"
+  }
+}

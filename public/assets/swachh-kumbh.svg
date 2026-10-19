@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 50" width="160" height="50" role="img" aria-label="Digital India & Swachh Kumbh Mission">
+  <defs>
+    <linearGradient id="flagGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF9933"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#138808"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Badge -->
+  <rect width="160" height="50" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+  <!-- Gandhi Spectacles for Swachh Bharat -->
+  <g transform="translate(12, 12)">
+    <circle cx="16" cy="14" r="10" fill="none" stroke="#1E293B" stroke-width="2"/>
+    <circle cx="44" cy="14" r="10" fill="none" stroke="#1E293B" stroke-width="2"/>
+    <path d="M26 14 Q 30 10 34 14" stroke="#1E293B" stroke-width="2" fill="none"/>
+    <line x1="2" y1="11" x2="6" y2="13" stroke="#1E293B" stroke-width="1.5"/>
+    <line x1="54" y1="13" x2="58" y2="11" stroke="#1E293B" stroke-width="1.5"/>
+    <!-- Glass text -->
+    <text x="16" y="17" text-anchor="middle" font-family="'Noto Sans Devanagari', sans-serif" font-size="8" font-weight="700" fill="#1E3A8A">स्वच्छ</text>
+    <text x="44" y="17" text-anchor="middle" font-family="'Noto Sans Devanagari', sans-serif" font-size="8" font-weight="700" fill="#138808">भारत</text>
+  </g>
+  <!-- Digital Text Right -->
+  <g transform="translate(76, 12)">
+    <text x="0" y="13" font-family="'Noto Sans Devanagari', sans-serif" font-size="10" font-weight="800" fill="#EA580C">स्वच्छ कुंभ</text>
+    <text x="0" y="25" font-family="'Noto Sans', sans-serif" font-size="8" font-weight="700" fill="#0284C7">Digital MahaKumbh</text>
+  </g>
+</svg>

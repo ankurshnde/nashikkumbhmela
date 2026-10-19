@@ -1,0 +1,167 @@
+:root {
+  --color-header-bg: #0A1C33;
+  --color-header-gradient-end: #122B4D;
+  --color-top-strip-bg: #040E1A;
+  --color-body-bg: #FCFBF7;
+  --color-surface-bg: #FFFFFF;
+  --color-surface-muted: #F8F5EE;
+  --color-border-default: #E2DDD3;
+  --color-border-subtle: #EDE8DF;
+  --color-text-primary: #111827;
+  --color-text-secondary: #374151;
+  --color-text-muted: #6B7280;
+  --color-kumbhdoot-cta: #D9531E;
+  --color-kumbhdoot-cta-hover: #B84012;
+  --color-kumbhdoot-cta-active: #94320C;
+  --font-base-size: 16px;
+}
+
+html.font-lg {
+  --font-base-size: 18px;
+}
+
+html.font-xl {
+  --font-base-size: 20px;
+}
+
+body {
+  font-size: var(--font-base-size);
+  background-color: var(--color-body-bg);
+  color: var(--color-text-primary);
+  font-family: "Noto Sans Devanagari", "Mukta", "Mangal", "Nirmala UI", "Arial Unicode MS", "Noto Sans", sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[lang="en"] body,
+html[lang="en"] body,
+.font-en,
+.font-poppins {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Vercel Design System Card Refinement */
+.vercel-card {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 1rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.vercel-card:hover {
+  border-color: rgba(203, 213, 225, 1);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+  transform: translateY(-1px);
+}
+
+/* Indian Government Official Styling */
+.gov-gold-border {
+  border-image: linear-gradient(to right, #D97706, #FDE68A, #D97706) 1;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 50%, #FDE68A 100%);
+}
+
+.royal-navy-gradient {
+  background: linear-gradient(135deg, #0A1C33 0%, #102A4C 60%, #163B6B 100%);
+}
+
+.minister-card {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 1rem;
+  background-color: #FFFFFF;
+}
+
+.minister-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.06), 0 4px 8px -2px rgba(0, 0, 0, 0.03);
+  border-color: #CBD5E1;
+}
+
+/* High Contrast Mode for GIGW 3.0 & WCAG 2.1 AA */
+html.high-contrast {
+  --color-header-bg: #000000;
+  --color-header-gradient-end: #000000;
+  --color-top-strip-bg: #000000;
+  --color-body-bg: #000000;
+  --color-surface-bg: #050505;
+  --color-surface-muted: #141414;
+  --color-border-default: #FFFF00;
+  --color-border-subtle: #FFFF00;
+  --color-text-primary: #FFFF00;
+  --color-text-secondary: #FFFFFF;
+  --color-text-muted: #E2E8F0;
+  --color-kumbhdoot-cta: #00FFFF;
+  --color-kumbhdoot-cta-hover: #38BDF8;
+  --color-kumbhdoot-cta-active: #0284C7;
+}
+
+html.high-contrast body {
+  background-color: #000000 !important;
+  color: #FFFF00 !important;
+}
+
+html.high-contrast * {
+  border-color: #FFFF00 !important;
+}
+
+html.high-contrast a {
+  color: #00FFFF !important;
+  text-decoration: underline !important;
+}
+
+html.high-contrast a.btn-cta,
+html.high-contrast button.btn-cta,
+html.high-contrast .kumbhdoot-cta-link {
+  background-color: #00FFFF !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+html.high-contrast .bg-white,
+html.high-contrast .bg-gray-50,
+html.high-contrast .bg-amber-50,
+html.high-contrast .bg-blue-50,
+html.high-contrast .bg-red-50,
+html.high-contrast .bg-orange-50 {
+  background-color: #0d0d0d !important;
+  color: #FFFFFF !important;
+}
+
+html.high-contrast .text-slate-600,
+html.high-contrast .text-slate-700,
+html.high-contrast .text-slate-800,
+html.high-contrast .text-gray-600,
+html.high-contrast .text-gray-700 {
+  color: #FFFFFF !important;
+}
+
+html.high-contrast .text-amber-800,
+html.high-contrast .text-amber-900,
+html.high-contrast .text-blue-900,
+html.high-contrast .text-blue-800 {
+  color: #FFFF00 !important;
+}
+
+/* Accessible visible focus indicator */
+:focus-visible {
+  outline: 3px solid #D9531E !important;
+  outline-offset: 3px !important;
+}
+
+html.high-contrast :focus-visible {
+  outline: 3px solid #00FFFF !important;
+  outline-offset: 3px !important;
+}
+
+.tap-target {
+  min-height: 48px;
+  min-width: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

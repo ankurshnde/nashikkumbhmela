@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-label="QR Code to KumbhDoot App (https://kumbhdoot.app)">
+  <rect width="240" height="240" fill="#FFFFFF" rx="12"/>
+  <!-- Decorative border with saffron accent -->
+  <rect x="8" y="8" width="224" height="224" fill="none" stroke="#D9531E" stroke-width="2" rx="8"/>
+  <!-- Corner Position Detection Patterns -->
+  <!-- Top Left -->
+  <rect x="24" y="24" width="48" height="48" fill="#0C2340"/>
+  <rect x="32" y="32" width="32" height="32" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="16" height="16" fill="#0C2340"/>
+  <!-- Top Right -->
+  <rect x="168" y="24" width="48" height="48" fill="#0C2340"/>
+  <rect x="176" y="32" width="32" height="32" fill="#FFFFFF"/>
+  <rect x="184" y="40" width="16" height="16" fill="#0C2340"/>
+  <!-- Bottom Left -->
+  <rect x="24" y="168" width="48" height="48" fill="#0C2340"/>
+  <rect x="32" y="176" width="32" height="32" fill="#FFFFFF"/>
+  <rect x="40" y="184" width="16" height="16" fill="#0C2340"/>
+  <!-- Timing Patterns & Simulated QR Matrix -->
+  <g fill="#0C2340">
+    <rect x="80" y="32" width="8" height="8"/><rect x="96" y="32" width="8" height="8"/><rect x="112" y="32" width="8" height="8"/><rect x="128" y="32" width="8" height="8"/><rect x="144" y="32" width="8" height="8"/>
+    <rect x="32" y="80" width="8" height="8"/><rect x="32" y="96" width="8" height="8"/><rect x="32" y="112" width="8" height="8"/><rect x="32" y="128" width="8" height="8"/><rect x="32" y="144" width="8" height="8"/>
+    <rect x="80" y="80" width="16" height="16"/><rect x="112" y="80" width="24" height="16"/><rect x="152" y="80" width="16" height="24"/>
+    <rect x="80" y="112" width="24" height="16"/><rect x="136" y="112" width="16" height="16"/><rect x="168" y="112" width="24" height="16"/>
+    <rect x="80" y="144" width="16" height="24"/><rect x="112" y="144" width="16" height="16"/><rect x="144" y="144" width="24" height="16"/>
+    <rect x="184" y="144" width="16" height="16"/><rect x="80" y="184" width="24" height="16"/><rect x="120" y="184" width="16" height="24"/>
+    <rect x="152" y="176" width="24" height="16"/><rect x="184" y="184" width="16" height="24"/>
+  </g>
+  <!-- Center Logo Badge -->
+  <rect x="92" y="92" width="56" height="56" rx="8" fill="#FFFFFF" stroke="#D9531E" stroke-width="2"/>
+  <circle cx="120" cy="120" r="18" fill="#D9531E"/>
+  <path d="M120 108 C124 108 127 111 127 115 C127 119 124 124 120 129 C116 124 113 119 113 115 C113 111 116 108 120 108 Z" fill="#FFFFFF"/>
+</svg>

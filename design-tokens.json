@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KumbhDoot - Nashik Kumbh Mela 2027 Design Tokens",
+  "description": "Design tokens prepared for Nashik District Administration and authorized site vendor for white-label retheming and GIGW 3.0 compliance.",
+  "metadata": {
+    "projectName": "KumbhDoot - Nashik Kumbh Mela 2027 Official Style Portal",
+    "version": "1.0.0-prototype",
+    "specification": "GIGW 3.0 & WCAG 2.1 AA",
+    "handoverNote": "Initial design prepared by KumbhDoot for the Nashik administration and its vendor, to be refined by them. No approval or partnership by the administration is claimed."
+  },
+  "colors": {
+    "theme": {
+      "headerBg": "#0C2340",
+      "headerBgGradientEnd": "#1B3B6F",
+      "headerText": "#FFFFFF",
+      "headerNavHover": "#E0EEFF",
+      "topStripBg": "#061325",
+      "topStripText": "#CBD5E1",
+      "bodyBg": "#FFFDF8",
+      "surfaceBg": "#FFFFFF",
+      "surfaceMuted": "#F8F6F0",
+      "borderSubtle": "#E5E1D8",
+      "borderDefault": "#CBD5E1",
+      "textPrimary": "#1A202C",
+      "textSecondary": "#475569",
+      "textMuted": "#64748B",
+      "textInverse": "#FFFFFF"
+    },
+    "kumbhdootCta": {
+      "background": "#D9531E",
+      "backgroundHover": "#BA4314",
+      "backgroundActive": "#9C350D",
+      "text": "#FFFFFF",
+      "focusRing": "#FDBA74",
+      "description": "Unified single action color strictly reserved across all pages for KumbhDoot pilgrimage AI assistant interactions"
+    },
+    "sacredAccents": {
+      "saffron": "#C2410C",
+      "saffronLight": "#FFEDD5",
+      "maroon": "#781C2E",
+      "maroonLight": "#FFE4E8",
+      "gangaTeal": "#0E7490",
+      "gangaTealLight": "#E0F2FE",
+      "tirangaGreen": "#15803D"
+    },
+    "status": {
+      "noticeInfoBg": "#EFF6FF",
+      "noticeInfoBorder": "#3B82F6",
+      "noticeWarningBg": "#FEF3C7",
+      "noticeWarningBorder": "#F59E0B",
+      "emergencyRedBg": "#FEE2E2",
+      "emergencyRedBorder": "#EF4444",
+      "emergencyRedText": "#991B1B",
+      "verifiedBadgeBg": "#DCFCE7",
+      "verifiedBadgeText": "#166534"
+    },
+    "highContrast": {
+      "background": "#000000",
+      "surface": "#121212",
+      "text": "#FFFF00",
+      "textSecondary": "#FFFFFF",
+      "border": "#FFFF00",
+      "focus": "#00FFFF",
+      "link": "#00FFFF",
+      "buttonBg": "#FFFF00",
+      "buttonText": "#000000",
+      "ctaBg": "#00FFFF",
+      "ctaText": "#000000"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": "'Noto Sans Devanagari', 'Noto Sans', system-ui, -apple-system, sans-serif",
+      "mono": "ui-monospace, monospace"
+    },
+    "fontSize": {
+      "xs": "0.75rem",
+      "sm": "0.875rem",
+      "base": "1rem",
+      "lg": "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem"
+    },
+    "lineHeight": {
+      "normal": "1.6",
+      "tight": "1.25",
+      "relaxed": "1.75"
+    },
+    "accessibilityScale": {
+      "normal": "100%",
+      "large": "112.5%",
+      "extraLarge": "125%"
+    }
+  },
+  "spacing": {
+    "minTapTarget": "48px",
+    "containerMaxWidth": "1280px",
+    "gutterMobile": "16px",
+    "gutterDesktop": "24px"
+  },
+  "radii": {
+    "sm": "4px",
+    "md": "8px",
+    "lg": "12px",
+    "full": "9999px"
+  },
+  "shadows": {
+    "card": "0 1px 3px 0 rgba(0, 0, 0, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.04)",
+    "elevated": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)"
+  }
+}

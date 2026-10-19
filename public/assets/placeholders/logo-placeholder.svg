@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80" role="img" aria-label="Replaceable Official Logo Placeholder">
+  <rect width="320" height="80" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6 3"/>
+  <circle cx="44" cy="40" r="28" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.5"/>
+  <!-- Placeholder Emblem / Kalash Icon -->
+  <path d="M44 22 C49 22 53 26 53 31 C53 36 49 42 44 48 C39 42 35 36 35 31 C35 26 39 22 44 22 Z" fill="#D9531E" opacity="0.85"/>
+  <circle cx="44" cy="27" r="3" fill="#FFFDF8"/>
+  <path d="M34 50 L54 50 L51 56 L37 56 Z" fill="#64748B"/>
+  <!-- Bilingual Text -->
+  <text x="82" y="32" font-family="'Noto Sans Devanagari', 'Noto Sans', sans-serif" font-size="13" font-weight="700" fill="#0C2340">लोगो जागा (REPLACEABLE LOGO)</text>
+  <text x="82" y="48" font-family="'Noto Sans Devanagari', 'Noto Sans', sans-serif" font-size="10.5" font-weight="600" fill="#64748B">नाशिक-त्र्यंबकेश्वर सिंहस्थ २०२७</text>
+  <text x="82" y="63" font-family="'Noto Sans', sans-serif" font-size="9" fill="#94A3B8">To be replaced with GoM / NTKMA emblem</text>
+</svg>

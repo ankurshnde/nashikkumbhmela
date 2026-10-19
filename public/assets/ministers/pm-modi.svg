@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 190" width="160" height="190" role="img" aria-label="Portrait of Shri Narendra Modi, Hon'ble Prime Minister of India">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EFF6FF"/>
+      <stop offset="100%" stop-color="#DBEAFE"/>
+    </linearGradient>
+    <linearGradient id="kurtaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EA580C"/>
+      <stop offset="100%" stop-color="#9A3412"/>
+    </linearGradient>
+    <linearGradient id="jacketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4B5563"/>
+      <stop offset="100%" stop-color="#1F2937"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Card -->
+  <rect width="160" height="190" rx="10" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Tiranga Top Ribbon -->
+  <rect x="0" y="0" width="160" height="4" fill="#FF9933"/>
+  <rect x="0" y="4" width="160" height="4" fill="#FFFFFF"/>
+  <rect x="0" y="8" width="160" height="4" fill="#138808"/>
+
+  <!-- Modi Silhouette Portrait -->
+  <g transform="translate(15, 20)">
+    <!-- Shoulders & Kurta/Jacket -->
+    <path d="M10 160 L120 160 C120 120 105 105 90 98 L85 105 L45 105 L40 98 C25 105 10 120 10 160 Z" fill="url(#jacketGrad)"/>
+    <!-- Saffron Kurta Collar -->
+    <path d="M50 100 L80 100 L76 130 L54 130 Z" fill="url(#kurtaGrad)"/>
+    <path d="M65 100 L65 150" stroke="#FFF7ED" stroke-width="2"/>
+
+    <!-- Neck -->
+    <rect x="52" y="78" width="26" height="25" fill="#E2B194"/>
+
+    <!-- Head & Beard -->
+    <!-- Head Base -->
+    <ellipse cx="65" cy="58" rx="26" ry="30" fill="#E2B194"/>
+    <!-- White Hair and Signature Beard -->
+    <path d="M38 48 C38 25 50 18 65 18 C80 18 92 25 92 48 C92 55 90 60 88 64 C90 70 86 86 65 88 C44 86 40 70 42 64 C40 60 38 55 38 48 Z" fill="#F8FAFC" opacity="0.95"/>
+    <ellipse cx="65" cy="54" rx="22" ry="24" fill="#E2B194"/>
+    
+    <!-- White Hair Top -->
+    <path d="M40 45 C40 22 52 16 65 16 C78 16 90 22 90 45 C86 32 75 25 65 25 C55 25 44 32 40 45 Z" fill="#F1F5F9"/>
+
+    <!-- White Beard & Mustache -->
+    <path d="M44 56 C44 76 52 86 65 86 C78 86 86 76 86 56 C80 62 74 65 65 65 C56 65 50 62 44 56 Z" fill="#FFFFFF"/>
+    <!-- Mustache -->
+    <path d="M52 64 Q 65 68 78 64 Q 65 72 52 64 Z" fill="#F8FAFC"/>
+
+    <!-- Spectacles -->
+    <rect x="47" y="46" width="14" height="10" rx="3" fill="none" stroke="#1E293B" stroke-width="1.8"/>
+    <rect x="69" y="46" width="14" height="10" rx="3" fill="none" stroke="#1E293B" stroke-width="1.8"/>
+    <line x1="61" y1="51" x2="69" y2="51" stroke="#1E293B" stroke-width="1.8"/>
+    <line x1="40" y1="50" x2="47" y2="50" stroke="#1E293B" stroke-width="1.5"/>
+    <line x1="83" y1="50" x2="90" y2="50" stroke="#1E293B" stroke-width="1.5"/>
+
+    <!-- Eyes inside frames -->
+    <circle cx="54" cy="51" r="2.2" fill="#1E293B"/>
+    <circle cx="76" cy="51" r="2.2" fill="#1E293B"/>
+    <path d="M48 42 Q 54 40 60 42" stroke="#94A3B8" stroke-width="1.5" fill="none"/>
+    <path d="M70 42 Q 76 40 82 42" stroke="#94A3B8" stroke-width="1.5" fill="none"/>
+  </g>
+</svg>

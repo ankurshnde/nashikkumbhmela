@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="mr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nashik-Trimbakeshwar Simhastha Kumbh Mela 2027 - Official Government Portal. Government of Maharashtra & Nashik-Trimbakeshwar Kumbh Mela Authority (NTKMA).">
+  <title>नाशिक-त्र्यंबकेश्वर सिंहस्थ कुंभमेळा २०२७ | प्रस्तावित संदर्भ प्रारूप (Proposed Reference Design)</title>
+  
+  <!-- Preconnect to Google Fonts for Official Devanagari Fonts (Noto Sans Devanagari, Mukta) & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800;900&family=Noto+Sans:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./public/images/kumbh-mela-logo.png">
+  
+  <!-- Compiled Tailwind CSS & Design Tokens -->
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="stylesheet" href="./src/styles/tokens.css">
+</head>
+<body class="bg-gov-bodyBg text-gov-textPrimary font-devanagari antialiased flex flex-col min-h-screen">
+
+  <!-- ACCESSIBILITY: Skip to Main Content Link -->
+  <a href="#main-content" class="skip-link" data-i18n="topStrip.skipToContent">मुख्य मजकुराकडे जा (Skip to main content)</a>
+
+  <!-- TOP STRIP: GIGW 3.0 Standard Accessibility & Language Bar -->
+  <header id="top-strip" class="bg-gov-topStrip text-slate-300 text-xs py-1 px-4 border-b border-slate-800" role="region" aria-label="सुलभता व भाषा नियंत्रण पट्टी">
+    <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-2">
+      <!-- Left: Official Government of Maharashtra Identification -->
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-2 text-slate-300 font-medium">
+          <img src="./public/images/seal-maharashtra.png" alt="Seal of Maharashtra" class="h-4 w-4 object-contain inline-block">
+          <span class="text-amber-400 font-bold" data-i18n="header.govTitle">महाराष्ट्र शासन</span>
+          <span class="text-slate-500">•</span>
+          <span>Government of Maharashtra</span>
+        </span>
+        <span class="text-slate-600 hidden sm:inline">|</span>
+        <a href="#main-content" class="hidden md:inline hover:text-white underline" data-i18n="topStrip.skipToContent">मुख्य मजकूर</a>
+        <button id="screen-reader-btn" class="hidden sm:inline hover:text-white underline cursor-pointer" data-i18n="topStrip.screenReader">स्क्रीन रीडर प्रवेश</button>
+      </div>
+
+      <!-- Right: Text Size Controls, High Contrast & Language Switcher -->
+      <div class="flex items-center gap-3">
+        <!-- Font Resize: A- A A+ -->
+        <div class="flex items-center bg-slate-900 border border-slate-700 rounded overflow-hidden" role="group" aria-label="Text Size Controls">
+          <span class="px-1.5 text-[10px] text-slate-400 hidden sm:inline" data-i18n="topStrip.textSize">अक्षर</span>
+          <button id="font-decrease" class="px-2 py-0.5 hover:bg-slate-700 text-slate-200 font-medium" title="Decrease font size" aria-label="Decrease text size">A-</button>
+          <button id="font-normal" class="px-2 py-0.5 hover:bg-slate-700 text-slate-200 font-bold bg-white text-slate-900" title="Normal font size" aria-label="Standard text size" aria-pressed="true">A</button>
+          <button id="font-increase" class="px-2 py-0.5 hover:bg-slate-700 text-slate-200 font-medium" title="Increase font size" aria-label="Increase text size">A+</button>
+        </div>
+
+        <!-- High Contrast Mode Toggle -->
+        <button id="contrast-toggle" class="flex items-center gap-1 px-2.5 py-0.5 bg-slate-900 hover:bg-slate-800 border border-slate-700 rounded text-slate-200 transition" aria-pressed="false" title="Toggle High Contrast for visually impaired users">
+          <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v18m0-18a9 9 0 019 9 9 9 0 01-9 9m0-18a9 9 0 00-9 9 9 9 0 009 9z"/></svg>
+          <span data-i18n="topStrip.highContrast">उच्च कॉन्ट्रास्ट</span>
+        </button>
+
+        <!-- Language Switcher: Marathi (First) / Hindi / English -->
+        <div class="flex items-center bg-slate-900 border border-slate-700 rounded overflow-hidden" role="group" aria-label="Language Selector">
+          <button data-lang-choice="mr" class="px-2.5 py-0.5 text-xs bg-gov-header text-white font-bold transition" aria-current="true">मराठी</button>
+          <button data-lang-choice="hi" class="px-2.5 py-0.5 text-xs text-slate-300 hover:text-white transition">हिन्दी</button>
+          <button data-lang-choice="en" class="px-2.5 py-0.5 text-xs text-slate-300 hover:text-white transition">English</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN HEADER: Official Government of Maharashtra & Simhastha 2027 Brand Identity -->
+  <header class="bg-gov-header text-white shadow-lg relative z-30" role="banner">
+    <!-- Subtle Tri-Color National Accent Line -->
+    <div class="h-1.5 w-full bg-gradient-to-r from-orange-500 via-white to-emerald-600"></div>
+
+    <div class="max-w-7xl mx-auto px-4 py-2 sm:py-2.5 flex items-center justify-between gap-3 sm:gap-4">
+      <!-- Left: State Emblem + Maharashtra Seal + Official Kumbh Logo -->
+      <div class="flex items-center gap-2 sm:gap-4 flex-1 min-w-0">
+        <!-- Ashoka Lion Capital (Emblem of India - New Gold Emblem) -->
+        <div class="flex-shrink-0" title="State Emblem of India">
+          <img src="./public/images/emb.jpg" alt="State Emblem of India" class="h-10 sm:h-14 w-auto rounded object-contain drop-shadow">
+        </div>
+
+        <!-- Government of Maharashtra Seal -->
+        <div class="flex-shrink-0 hidden md:block" title="Seal of Government of Maharashtra">
+          <img src="./public/images/seal-maharashtra.png" alt="Seal of Maharashtra" class="h-12 sm:h-14 w-auto drop-shadow">
+        </div>
+
+        <!-- Official Kumbh Mela Logo -->
+        <div class="flex-shrink-0" title="Official Logo of Nashik Kumbh Mela">
+          <img src="./public/images/kumbh-mela-logo.png" alt="Official Nashik Kumbh Mela Logo" class="h-10 sm:h-16 w-auto drop-shadow">
+        </div>
+
+        <!-- Official Title Block -->
+        <div class="border-l border-slate-700 pl-2.5 sm:pl-4 min-w-0">
+          <div class="text-[9px] sm:text-xs text-amber-300 font-extrabold uppercase tracking-wider truncate" data-i18n="header.govSubtitle">
+            महाराष्ट्र शासन • Government of Maharashtra
+          </div>
+          <h1 class="text-sm sm:text-base lg:text-lg font-black tracking-tight leading-tight text-white drop-shadow-sm truncate sm:whitespace-normal" data-i18n="header.portalTitle">
+            नाशिक-त्र्यंबकेश्वर सिंहस्थ कुंभमेळा २०२७
+          </h1>
+          <div class="text-[10px] sm:text-xs text-slate-300 font-medium tracking-wide hidden sm:block" data-i18n="header.authoritySub">
+            प्रस्तावित संकेतस्थळ संदर्भ प्रारूप • Proposed Reference Design
+          </div>
+        </div>
+      </div>
+
+      <!-- Header Right: Matching Official Action Buttons & Digital India Initiative (Unified Format, No Hamburger) -->
+      <div class="flex items-center gap-1.5 sm:gap-2.5 flex-shrink-0">
+        <!-- Digital India Official Logo (Government of India Flagship Initiative) -->
+        <a href="https://www.digitalindia.gov.in" target="_blank" rel="noopener noreferrer" class="hidden sm:flex items-center bg-white hover:bg-slate-100 px-2 sm:px-2.5 py-1 rounded-lg border border-slate-600 shadow-sm transition tap-target flex-shrink-0" title="Digital India - Power to Empower" aria-label="Digital India Portal (External Link)">
+          <img src="./public/images/digital-india.png" alt="Digital India - Power to Empower" class="h-6 sm:h-7 w-auto object-contain">
+        </a>
+
+        <!-- Search Button (Identical Dimensions, Height, Radius & Typography) -->
+        <button id="header-search-btn" onclick="window.openSearchModal && window.openSearchModal()" class="flex items-center gap-1.5 sm:gap-2 bg-slate-900/90 hover:bg-slate-800 text-white font-bold text-xs sm:text-sm px-2.5 sm:px-3.5 py-2 sm:py-2.5 rounded-lg border border-slate-700 shadow-sm transition tap-target" aria-label="Search portal" title="Search portal">
+          <svg class="w-4 h-4 flex-shrink-0 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <span data-i18n="nav.searchBtn">शोधा</span>
+        </button>
+
+        <!-- KumbhDoot In-Page AI Assistant Button (Identical Dimensions, Height, Radius & Typography) -->
+        <button id="header-kumbhdoot-btn" onclick="window.openKumbhDootAssistant('general')" class="trigger-kumbhdoot-modal flex items-center gap-1.5 sm:gap-2 bg-kumbhdoot-cta hover:bg-kumbhdoot-ctaHover text-white font-bold text-xs sm:text-sm px-2.5 sm:px-3.5 py-2 sm:py-2.5 rounded-lg shadow-sm transition tap-target" title="Open KumbhDoot AI Pilgrim Assistant">
+          <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"/></svg>
+          <span class="btn-label hidden sm:inline" data-i18n="kumbhdootCta.label">कुंभदूत AI सहाय्यक</span>
+          <span class="btn-label-mobile sm:hidden" data-i18n="kumbhdootCta.mobileLabel">कुंभदूत AI</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- MAIN NAVIGATION BAR (Responsive Horizontal Scroll for all screens, No Hamburger) -->
+    <nav id="main-nav" class="bg-slate-950/95 border-t border-slate-800 px-3 sm:px-4 overflow-x-auto scrollbar-none" role="navigation" aria-label="मुख्य मार्गक्रमण">
+      <div class="max-w-7xl mx-auto flex items-center justify-between text-xs font-semibold gap-2">
+        <ul class="flex items-center flex-nowrap lg:flex-wrap gap-0.5 whitespace-nowrap py-1 lg:py-0">
+          <li><a href="#home" data-nav-target="home" class="nav-link py-2.5 lg:py-3 px-2.5 sm:px-3 inline-block hover:text-amber-300 transition" data-i18n="nav.home">मुख्यपृष्ठ</a></li>
+          <li><a href="#schedule" data-nav-target="schedule" class="nav-link py-2.5 lg:py-3 px-2.5 sm:px-3 inline-block hover:text-amber-300 transition" data-i18n="nav.schedule">शाही स्नान वेळापत्रक</a></li>
+          <li><a href="#map" data-nav-target="map" class="nav-link py-2.5 lg:py-3 px-2.5 sm:px-3 inline-block hover:text-amber-300 transition" data-i18n="nav.map">तीर्थक्षेत्र नकाशा व घाट</a></li>
+          <li><a href="#transport" data-nav-target="transport" class="nav-link py-2.5 lg:py-3 px-2.5 sm:px-3 inline-block hover:text-amber-300 transition" data-i18n="nav.transport">वाहतूक व पार्किंग</a></li>
+          <li><a href="#safety" data-nav-target="safety" class="nav-link py-2.5 lg:py-3 px-2.5 sm:px-3 inline-block hover:text-amber-300 transition" data-i18n="nav.safety">सुरक्षा व नियंत्रण</a></li>
+          <li><a href="#lost-found" data-nav-target="lost-found" class="nav-link py-2.5 lg:py-3 px-2.5 sm:px-3 inline-block hover:text-amber-300 transition" data-i18n="nav.lostFound">हरवले-सापडले</a></li>
+          <li><a href="#volunteer" data-nav-target="volunteer" class="nav-link py-2.5 lg:py-3 px-2.5 sm:px-3 inline-block hover:text-amber-300 transition" data-i18n="nav.volunteer">स्वयंसेवक नोंदणी</a></li>
+          <li><a href="#notices" data-nav-target="notices" class="nav-link py-2.5 lg:py-3 px-2.5 sm:px-3 inline-block hover:text-amber-300 transition" data-i18n="nav.notices">शासकीय परिपत्रके</a></li>
+          <li><a href="#about" data-nav-target="about" class="nav-link py-2.5 lg:py-3 px-2.5 sm:px-3 inline-block hover:text-amber-300 transition" data-i18n="nav.about">कुंभदूत AI व परिचय</a></li>
+        </ul>
+        
+        <!-- On-site QR Code Shortcut (Clean SVG, No Emoji) -->
+        <button class="open-qr-modal text-xs font-bold text-amber-300 hover:text-amber-200 py-1.5 px-2.5 rounded border border-amber-400/50 flex items-center gap-1.5 transition flex-shrink-0">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"/></svg>
+          <span data-i18n="hero.qrButton">ॲप QR कोड</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main id="main-content" class="flex-grow focus:outline-none" tabindex="-1">
+
+    <!-- ========================================== -->
+    <!-- VIEW: 1. HOME PAGE                         -->
+    <!-- ========================================== -->
+    <div id="page-home" class="page-view">
+
+      <!-- PRODUCTION HERO BANNER (Using Real Kumbh Crowd Photo with Royal Overlay) -->
+      <section class="relative text-white py-14 sm:py-20 px-4 overflow-hidden" aria-labelledby="hero-title" style="background: linear-gradient(to right, rgba(10, 28, 51, 0.88), rgba(10, 28, 51, 0.72), rgba(10, 28, 51, 0.88)), url('./public/images/hero-kumbh-crowd.jpg') center/cover no-repeat;">
+        <!-- Spiritual Gold Accent Shimmer -->
+        <div class="absolute inset-0 bg-radial-at-c from-amber-500/10 via-transparent to-transparent pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+          <div class="max-w-4xl">
+            <div class="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/30 to-orange-500/30 border border-amber-400/60 text-amber-300 text-xs px-3.5 py-1.5 rounded-full font-bold mb-4 uppercase tracking-wider backdrop-blur-sm shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+              <span data-i18n="hero.badge">प्रस्तावित संदर्भ प्रारूप • Proposed Reference Design</span>
+            </div>
+
+            <h1 id="hero-title" class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight leading-snug mb-3 max-w-3xl drop-shadow" data-i18n="hero.title">
+              पवित्र गोदावरी तट व त्र्यंबकेश्वर ज्योतिर्लिंग सिंहस्थ कुंभमेळा २०२७
+            </h1>
+
+            <!-- Reference Timeline Window (Clearly labeled provisional) -->
+            <div class="bg-slate-900/85 border-l-4 border-amber-500 p-3.5 sm:p-4 rounded-r-lg max-w-2xl mb-5 shadow-md backdrop-blur-sm">
+              <div class="flex items-center gap-2 text-amber-300 font-bold text-xs sm:text-sm">
+                <svg class="w-4 h-4 flex-shrink-0 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                <span data-i18n="hero.datesPlaceholder">नियोजित कालमर्यादा: ३१ ऑक्टोबर २०२६ (ध्वजारोहण) • सांगता: २४ जुलै २०२८</span>
+              </div>
+              <div class="text-[11px] text-slate-300 mt-1.5 flex items-center justify-between flex-wrap gap-2">
+                <span data-i18n="hero.datesSource">परंपरागत संदर्भ पंचांग तिथींनुसार (nashikkumbhmela.co.in)</span>
+                <span class="text-amber-300 font-medium bg-amber-950/80 px-2 py-0.5 rounded border border-amber-500/40 text-[10px]" data-i18n="hero.datesGazette">प्रस्तावित • अंतिम शासकीय अधिसूचनेच्या अधीन</span>
+              </div>
+            </div>
+
+            <p class="text-slate-200 text-sm sm:text-base lg:text-lg leading-relaxed mb-8 max-w-3xl" data-i18n="hero.description">
+              नाशिक आणि त्र्यंबकेश्वरच्या पावन भूमीवर अवतरणाऱ्या कोट्यवधी भाविकांच्या सेवेसाठी, सुरक्षिततेसाठी व सुखद तीर्थयात्रेसाठी महाराष्ट्र शासनाचे एकात्मिक डिजिटल महापोर्टल.
+            </p>
+
+            <!-- HERO ACTION BUTTONS -->
+            <div class="flex items-center gap-3.5 flex-wrap">
+              <!-- Primary: View Schedule -->
+              <a href="#schedule" data-nav-target="schedule" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-black text-sm sm:text-base px-6 py-3.5 rounded-lg shadow-lg flex items-center gap-2 transition tap-target">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                <span data-i18n="hero.viewSchedule">शाही स्नान वेळापत्रक</span>
+              </a>
+
+              <!-- Secondary: Interactive Map & Places -->
+              <a href="#map" data-nav-target="map" class="bg-white/15 hover:bg-white/25 text-white font-bold text-sm sm:text-base px-5 py-3.5 rounded-lg border border-white/25 flex items-center gap-2 transition tap-target backdrop-blur-sm">
+                <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                <span data-i18n="hero.exploreMap">डिजिटल नकाशा व घाट</span>
+              </a>
+
+              <!-- Tertiary: KumbhDoot In-Page Assistant -->
+              <button onclick="window.openKumbhDootAssistant('general')" class="bg-kumbhdoot-cta hover:bg-kumbhdoot-ctaHover text-white font-bold text-sm sm:text-base px-5 py-3.5 rounded-lg shadow-md flex items-center gap-2 transition tap-target">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"/></svg>
+                <span data-i18n="hero.kumbhdootAiBtn">कुंभदूत AI सहाय्यक</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INFORMATIONAL KEY METRICS RIBBON (Reference Information) -->
+      <section class="bg-slate-900 border-y border-slate-800 py-2.5 px-4 text-xs font-medium text-slate-300" aria-label="पर्व संदर्भ माहिती पट्टी">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3 items-center">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-amber-400 flex-shrink-0"></span>
+            <span data-i18n="telemetry.riverDischarge">नियोजित कालावधी: २०२६ – २०२८</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-blue-400 flex-shrink-0"></span>
+            <span data-i18n="telemetry.waterQuality">मुख्य तीर्थक्षेत्र: रामकुंड व त्र्यंबकेश्वर</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 flex-shrink-0"></span>
+            <span data-i18n="telemetry.footfall">प्रस्तावित वेळापत्रक: १५ पर्व स्नान तिथी</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-teal-400 flex-shrink-0"></span>
+            <span data-i18n="telemetry.controlRoom">प्रस्तावित एकात्मिक भाविक सहाय्य प्रणाली</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- DIGNITARY / LEADERSHIP SECTION (Real Minister & Administration Photos) -->
+      <section id="leadership-section" class="max-w-7xl mx-auto px-4 py-10" aria-labelledby="leadership-heading">
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <div class="inline-block bg-amber-100 text-amber-900 font-black text-xs uppercase px-3 py-1 rounded-full mb-2" data-i18n="leadership.badge">
+            महाराष्ट्र शासन नेतृत्व
+          </div>
+          <h2 id="leadership-heading" class="text-2xl sm:text-3xl font-extrabold text-slate-900" data-i18n="leadership.title">
+            शासन व मार्गदर्शक नेतृत्व
+          </h2>
+          <p class="text-slate-600 text-xs sm:text-sm mt-1" data-i18n="leadership.subtitle">
+            सिंहस्थ कुंभमेळा २०२७ च्या यशस्वी, दिव्य व सुरक्षित आयोजनासाठी कटिबद्ध शासन
+          </p>
+        </div>
+
+        <!-- Ministers & Dignitaries Cards Row (Clean Geometry & Standardized 5:6 Framing) -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3 sm:gap-3.5">
+          <!-- 1. Shri Narendra Modi -->
+          <div class="group bg-white rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md hover:border-slate-300 transition-all duration-200 overflow-hidden flex flex-col justify-between">
+            <div class="relative aspect-[5/6] bg-white overflow-hidden border-b border-slate-100">
+              <img src="./public/images/ministers/modi-clean.jpg" alt="Shri Narendra Modi" class="w-full h-full object-cover object-top transition duration-200" loading="lazy">
+            </div>
+            <div class="p-2.5 sm:p-3 text-center flex flex-col items-center justify-center flex-grow">
+              <h3 class="text-xs sm:text-sm font-bold text-slate-900 tracking-tight leading-snug group-hover:text-amber-800 transition" data-i18n="leadership.pmName">श्री नरेंद्र मोदी</h3>
+              <div class="mt-1.5 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-semibold bg-amber-50 text-amber-900 border border-amber-200/70" data-i18n="leadership.pmRole">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                मा. पंतप्रधान, भारत
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Shri Devendra Fadnavis -->
+          <div class="group bg-white rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md hover:border-slate-300 transition-all duration-200 overflow-hidden flex flex-col justify-between">
+            <div class="relative aspect-[5/6] bg-white overflow-hidden border-b border-slate-100">
+              <img src="./public/images/ministers/fadnavis-clean.jpg" alt="Shri Devendra Fadnavis" class="w-full h-full object-cover object-top transition duration-200" loading="lazy">
+            </div>
+            <div class="p-2.5 sm:p-3 text-center flex flex-col items-center justify-center flex-grow">
+              <h3 class="text-xs sm:text-sm font-bold text-slate-900 tracking-tight leading-snug group-hover:text-amber-800 transition" data-i18n="leadership.cmName">श्री देवेंद्र फडणवीस</h3>
+              <div class="mt-1.5 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-semibold bg-amber-50 text-amber-900 border border-amber-200/70" data-i18n="leadership.cmRole">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                मा. मुख्यमंत्री, महाराष्ट्र राज्य
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Shri Eknath Shinde -->
+          <div class="group bg-white rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md hover:border-slate-300 transition-all duration-200 overflow-hidden flex flex-col justify-between">
+            <div class="relative aspect-[5/6] bg-white overflow-hidden border-b border-slate-100">
+              <img src="./public/images/ministers/shinde-clean.jpg" alt="Shri Eknath Shinde" class="w-full h-full object-cover object-top transition duration-200" loading="lazy">
+            </div>
+            <div class="p-2.5 sm:p-3 text-center flex flex-col items-center justify-center flex-grow">
+              <h3 class="text-xs sm:text-sm font-bold text-slate-900 tracking-tight leading-snug group-hover:text-amber-800 transition" data-i18n="leadership.dcm1Name">श्री एकनाथ शिंदे</h3>
+              <div class="mt-1.5 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-semibold bg-amber-50 text-amber-900 border border-amber-200/70" data-i18n="leadership.dcm1Role">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                मा. उपमुख्यमंत्री, महाराष्ट्र राज्य
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Smt. Sunetra Ajit Pawar -->
+          <div class="group bg-white rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md hover:border-slate-300 transition-all duration-200 overflow-hidden flex flex-col justify-between">
+            <div class="relative aspect-[5/6] bg-white overflow-hidden border-b border-slate-100">
+              <img src="./public/images/ministers/sunetra-clean.jpg" alt="Smt. Sunetra Ajit Pawar" class="w-full h-full object-cover object-top transition duration-200" loading="lazy">
+            </div>
+            <div class="p-2.5 sm:p-3 text-center flex flex-col items-center justify-center flex-grow">
+              <h3 class="text-xs sm:text-sm font-bold text-slate-900 tracking-tight leading-snug group-hover:text-amber-800 transition" data-i18n="leadership.dcm2Name">श्रीमती सुनेत्रा अजित पवार</h3>
+              <div class="mt-1.5 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-semibold bg-slate-100 text-slate-800 border border-slate-200 text-center" data-i18n="leadership.dcm2Role">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                मा. खासदार (राज्यसभा) [प्रस्तावित समावेश]
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Shri Girish Mahajan -->
+          <div class="group bg-white rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md hover:border-slate-300 transition-all duration-200 overflow-hidden flex flex-col justify-between">
+            <div class="relative aspect-[5/6] bg-white overflow-hidden border-b border-slate-100">
+              <img src="./public/images/ministers/mahajan-clean.jpg" alt="Shri Girish Mahajan" class="w-full h-full object-cover object-top transition duration-200" loading="lazy">
+            </div>
+            <div class="p-2.5 sm:p-3 text-center flex flex-col items-center justify-center flex-grow">
+              <h3 class="text-xs sm:text-sm font-bold text-slate-900 tracking-tight leading-snug group-hover:text-amber-800 transition" data-i18n="leadership.guardianMinisterName">श्री गिरीश महाजन</h3>
+              <div class="mt-1.5 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-semibold bg-amber-50 text-amber-900 border border-amber-200/70" data-i18n="leadership.guardianMinisterRole">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                मा. मंत्री व पालकमंत्री, नाशिक
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Dr. Praveen Gedam, IAS -->
+          <div class="group bg-white rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md hover:border-slate-300 transition-all duration-200 overflow-hidden flex flex-col justify-between">
+            <div class="relative aspect-[5/6] bg-white overflow-hidden border-b border-slate-100">
+              <img src="./public/images/ministers/gedam-clean.jpg" alt="Dr. Praveen Gedam, IAS" class="w-full h-full object-cover object-top transition duration-200" loading="lazy">
+            </div>
+            <div class="p-2.5 sm:p-3 text-center flex flex-col items-center justify-center flex-grow">
+              <h3 class="text-xs sm:text-sm font-bold text-slate-900 tracking-tight leading-snug" data-i18n="leadership.divComName">डॉ. प्रवीण गेडाम, भा.प्र.से.</h3>
+              <div class="mt-1.5 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-semibold bg-slate-100 text-slate-700 border border-slate-200" data-i18n="leadership.divComRole">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                विभागीय आयुक्त, नाशिक
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Shri Shekhar Singh, IAS -->
+          <div class="group bg-white rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-md hover:border-slate-300 transition-all duration-200 overflow-hidden flex flex-col justify-between">
+            <div class="relative aspect-[5/6] bg-white overflow-hidden border-b border-slate-100">
+              <img src="./public/images/ministers/shekhar-clean.jpg" alt="Shri Shekhar Singh, IAS" class="w-full h-full object-cover object-top transition duration-200" loading="lazy">
+            </div>
+            <div class="p-2.5 sm:p-3 text-center flex flex-col items-center justify-center flex-grow">
+              <h3 class="text-xs sm:text-sm font-bold text-slate-900 tracking-tight leading-snug" data-i18n="leadership.kumbhCommName">श्री शेखर सिंह, भा.प्र.से.</h3>
+              <div class="mt-1.5 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] sm:text-[11px] font-semibold bg-slate-100 text-slate-700 border border-slate-200" data-i18n="leadership.kumbhCommRole">
+                <span class="w-1.5 h-1.5 rounded-full bg-slate-400"></span>
+                आयुक्त, नाशिक-त्र्यंबकेश्वर कुंभमेळा प्राधिकरण
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NOTICE TICKER (GIGW Compliant with Pause/Play controls) -->
+      <section class="bg-amber-100 border-y border-amber-300 py-2.5 px-4" aria-label="ताज्या शासकीय सूचना टिकर">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-3 text-xs sm:text-sm">
+          <div class="flex items-center gap-2 flex-shrink-0">
+            <span class="bg-sacred-saffron text-white font-bold px-2 py-0.5 rounded text-xs flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+              <span data-i18n="ticker.label">थेट शासकीय सूचना:</span>
+            </span>
+            <button id="ticker-pause-btn" class="text-xs p-1.5 bg-amber-200 hover:bg-amber-300 rounded font-bold tap-target flex items-center justify-center" aria-label="Pause announcement ticker" title="Pause / Play announcement ticker"><svg class="w-3.5 h-3.5 text-amber-900" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg></button>
+          </div>
+
+          <div class="overflow-hidden flex-grow relative">
+            <div id="notice-ticker-track" class="whitespace-nowrap inline-block text-slate-900 font-semibold animate-none sm:hover:cursor-pointer">
+              <span data-i18n="ticker.item1">सिंहस्थ २०२७ साठी रामकुंड, तपोवन व कुशावर्त परिसराचा एकात्मिक गर्दी नियंत्रण व सुरक्षा आराखडा मंजूर</span>
+              <span class="mx-3 text-amber-600 font-bold">•</span>
+              <span data-i18n="ticker.item2">नाशिक रोड रेल्वे स्थानक ते सॅटेलाइट पार्किंग मोफत ई-बस शटल कॉरिडोअरची चाचणी यशस्वी</span>
+              <span class="mx-3 text-amber-600 font-bold">•</span>
+              <span data-i18n="ticker.item3">२४x७ एकात्मिक आपत्कालीन नियंत्रण कक्ष व टोल-फ्री क्रमांक कार्यान्वित</span>
+            </div>
+          </div>
+
+          <div class="hidden md:flex items-center gap-2 text-[11px] text-slate-700 flex-shrink-0 font-bold">
+            <span data-i18n="sourceNotice.sourceOffice">नाशिक जिल्हा प्रशासन व NTKMA</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUICK SERVICE TILES -->
+      <section class="max-w-7xl mx-auto px-4 py-10" aria-labelledby="quick-services-heading">
+        <div class="text-center mb-8">
+          <h2 id="quick-services-heading" class="text-2xl sm:text-3xl font-extrabold text-slate-900" data-i18n="quickServices.title">
+            तीर्थयात्री त्वरित सेवा व सुविधा
+          </h2>
+          <p class="text-slate-600 text-sm mt-1" data-i18n="quickServices.subtitle">
+            सर्व प्रमुख शासकीय सेवा व सुविधा एका क्लिकवर उपलब्ध
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+          <!-- Tile 1: Snan Schedule -->
+          <a href="#schedule" data-nav-target="schedule" class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-amber-400 transition flex flex-col items-center text-center group tap-target">
+            <div class="w-14 h-14 rounded-full bg-amber-50 text-amber-700 flex items-center justify-center mb-3 group-hover:scale-105 transition">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            </div>
+            <span class="text-sm sm:text-base font-bold text-slate-900 group-hover:text-amber-800" data-i18n="quickServices.snanSchedule">शाही स्नान वेळापत्रक</span>
+          </a>
+
+          <!-- Tile 2: Maps and Routes -->
+          <a href="#map" data-nav-target="map" class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-400 transition flex flex-col items-center text-center group tap-target">
+            <div class="w-14 h-14 rounded-full bg-blue-50 text-blue-700 flex items-center justify-center mb-3 group-hover:scale-105 transition">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+            </div>
+            <span class="text-sm sm:text-base font-bold text-slate-900 group-hover:text-blue-800" data-i18n="quickServices.mapsRoutes">पवित्र घाट व परिसर</span>
+          </a>
+
+          <!-- Tile 3: Parking and Transport -->
+          <a href="#transport" data-nav-target="transport" class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-emerald-400 transition flex flex-col items-center text-center group tap-target">
+            <div class="w-14 h-14 rounded-full bg-emerald-50 text-emerald-700 flex items-center justify-center mb-3 group-hover:scale-105 transition">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+            </div>
+            <span class="text-sm sm:text-base font-bold text-slate-900 group-hover:text-emerald-800" data-i18n="quickServices.parkingTransport">पार्किंग व शटल बस मार्ग</span>
+          </a>
+
+          <!-- Tile 4: Stay and Dharmashalas -->
+          <a href="#map" data-nav-target="map" class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-indigo-400 transition flex flex-col items-center text-center group tap-target">
+            <div class="w-14 h-14 rounded-full bg-indigo-50 text-indigo-700 flex items-center justify-center mb-3 group-hover:scale-105 transition">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+            </div>
+            <span class="text-sm sm:text-base font-bold text-slate-900 group-hover:text-indigo-800" data-i18n="quickServices.stayDharmashala">धर्मशाळा व निवास</span>
+          </a>
+
+          <!-- Tile 5: Lost & Found -->
+          <a href="#lost-found" data-nav-target="lost-found" class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-purple-400 transition flex flex-col items-center text-center group tap-target">
+            <div class="w-14 h-14 rounded-full bg-purple-50 text-purple-700 flex items-center justify-center mb-3 group-hover:scale-105 transition">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+            <span class="text-sm sm:text-base font-bold text-slate-900 group-hover:text-purple-800" data-i18n="quickServices.lostFound">हरवले-सापडले कक्ष</span>
+          </a>
+
+          <!-- Tile 6: Medical Help (Accurate First-Aid Cross SVG) -->
+          <a href="#safety" data-nav-target="safety" class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-rose-400 transition flex flex-col items-center text-center group tap-target">
+            <div class="w-14 h-14 rounded-full bg-rose-50 text-rose-700 flex items-center justify-center mb-3 group-hover:scale-105 transition">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/></svg>
+            </div>
+            <span class="text-sm sm:text-base font-bold text-slate-900 group-hover:text-rose-800" data-i18n="quickServices.medicalHelp">वैद्यकीय मदत व प्रथमोपचार</span>
+          </a>
+
+          <!-- Tile 7: Toilets and Water Points -->
+          <a href="#map" data-nav-target="map" class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-teal-400 transition flex flex-col items-center text-center group tap-target">
+            <div class="w-14 h-14 rounded-full bg-teal-50 text-teal-700 flex items-center justify-center mb-3 group-hover:scale-105 transition">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+            </div>
+            <span class="text-sm sm:text-base font-bold text-slate-900 group-hover:text-teal-800" data-i18n="quickServices.toiletsWater">स्वच्छतागृह व शुद्ध पाणी</span>
+          </a>
+
+          <!-- Tile 8: 24x7 Helplines -->
+          <a href="#safety" data-nav-target="safety" class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-red-400 transition flex flex-col items-center text-center group tap-target">
+            <div class="w-14 h-14 rounded-full bg-red-50 text-red-700 flex items-center justify-center mb-3 group-hover:scale-105 transition">
+              <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            </div>
+            <span class="text-sm sm:text-base font-bold text-slate-900 group-hover:text-red-800" data-i18n="quickServices.helplines">२४x७ आपत्कालीन संपर्क</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- SACRED HERITAGE & GHATS SECTION (Using Real User Photos) -->
+      <section class="bg-slate-50 border-y border-slate-200 py-12 px-4" aria-labelledby="heritage-heading">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center max-w-2xl mx-auto mb-10">
+            <span class="text-xs font-black uppercase tracking-wider text-amber-800 bg-amber-100 px-3 py-1 rounded-full" data-i18n="heritage.badge">पवित्र तीर्थक्षेत्रे</span>
+            <h2 id="heritage-heading" class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-2" data-i18n="heritage.title">
+              नाशिक-त्र्यंबकेश्वर पावन तीर्थक्षेत्र दर्शन
+            </h2>
+            <p class="text-slate-600 text-xs sm:text-sm mt-1" data-i18n="heritage.subtitle">
+              गोदावरी नदीचे पवित्र रामकुंड व त्र्यंबकेश्वर ज्योतिर्लिंग कुशावर्त तीर्थ
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- 1. Sacred Ramkund Ghat (Real Photograph) -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-md flex flex-col justify-between">
+              <div class="relative h-72 sm:h-80 overflow-hidden">
+                <img src="./public/images/ramkund-ghat.jpg" alt="Ramkund Sacred Bathing Ghat and Deepstambha in Nashik" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-5">
+                  <span class="text-xs font-bold text-amber-400 uppercase tracking-wider" data-i18n="heritage.ramkundLoc">नाशिक • पंचवटी</span>
+                  <h3 class="text-xl sm:text-2xl font-black text-white" data-i18n="heritage.ramkundTitle">पवित्र रामकुंड स्नान घाट व दीपमाळ</h3>
+                  <p class="text-xs text-slate-300 mt-0.5" data-i18n="heritage.ramkundDesc">वैष्णव आखाड्यांचे मुख्य शाही स्नान तीर्थ व गोदावरी महाआरती परिसर</p>
+                </div>
+              </div>
+              <div class="p-5 flex items-center justify-between gap-3 flex-wrap">
+                <div class="text-xs text-slate-600">
+                  <strong data-i18n="heritage.ramkundFacilitiesLabel">सुविधा:</strong> <span data-i18n="heritage.ramkundFacilities">महिला चेंजिंग कक्ष, सुरक्षा रक्षक, लाइफ जॅकेट्स, पिण्याचे पाणी</span>
+                </div>
+                <a href="#map" data-nav-target="map" class="text-xs font-bold text-blue-700 hover:text-blue-900 inline-flex items-center gap-1" data-i18n="heritage.viewOnMap">
+                  नकाशावर पहा
+                </a>
+              </div>
+            </div>
+
+            <!-- 2. Trimbakeshwar Jyotirlinga (Real Photograph) -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-md flex flex-col justify-between">
+              <div class="relative h-72 sm:h-80 overflow-hidden">
+                <img src="./public/images/trimbakeshwar-temple.jpg" alt="Trimbakeshwar Jyotirlinga Temple and Kushavarta Kund" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-5">
+                  <span class="text-xs font-bold text-amber-400 uppercase tracking-wider" data-i18n="heritage.trimbakLoc">त्र्यंबकेश्वर • ब्रह्मगिरी</span>
+                  <h3 class="text-xl sm:text-2xl font-black text-white" data-i18n="heritage.trimbakTitle">त्र्यंबकेश्वर ज्योतिर्लिंग व कुशावर्त कुंड</h3>
+                  <p class="text-xs text-slate-300 mt-0.5" data-i18n="heritage.trimbakDesc">द्वादश ज्योतिर्लिंगांपैकी एक आणि शैव आखाड्यांचे पावन शाही स्नान कुंड</p>
+                </div>
+              </div>
+              <div class="p-5 flex items-center justify-between gap-3 flex-wrap">
+                <div class="text-xs text-slate-600">
+                  <strong data-i18n="heritage.trimbakFacilitiesLabel">सुविधा:</strong> <span data-i18n="heritage.trimbakFacilities">बॅरिकेडिंग, ध्वनिक्षेपक नियंत्रण, मोफत शटल बस थांबा</span>
+                </div>
+                <a href="#map" data-nav-target="map" class="text-xs font-bold text-blue-700 hover:text-blue-900 inline-flex items-center gap-1" data-i18n="heritage.viewOnMap">
+                  नकाशावर पहा
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KEY DATES PREVIEW -->
+      <section class="max-w-7xl mx-auto px-4 py-12" aria-labelledby="home-dates-heading">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+          <div>
+            <h2 id="home-dates-heading" class="text-2xl sm:text-3xl font-extrabold text-slate-900" data-i18n="keyDates.title">
+              अधिकृत शाही स्नान पर्व व तारखा
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-600 font-medium mt-1" data-i18n="keyDates.note">
+              अखिल भारतीय आखाडा परिषद, पुरोहित संघ आणि महाराष्ट्र शासन मान्यताप्राप्त पर्व तिथी.
+            </p>
+          </div>
+          <a href="#schedule" data-nav-target="schedule" class="text-xs font-bold text-blue-700 hover:text-blue-900 inline-flex items-center gap-1.5 whitespace-nowrap" data-i18n="keyDates.viewAll">
+            संपूर्ण वेळापत्रक पहा
+          </a>
+        </div>
+
+        <div id="home-schedule-preview" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Dynamically populated by app.js -->
+        </div>
+      </section>
+
+      <!-- LIVE NOTICES PREVIEW -->
+      <section class="bg-slate-50 border-t border-slate-200 py-12 px-4" aria-labelledby="home-notices-heading">
+        <div class="max-w-7xl mx-auto">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+            <div>
+              <h2 id="home-notices-heading" class="text-2xl font-extrabold text-slate-900" data-i18n="notices.homeTitle">
+                शासकीय परिपत्रके व आदेश (Official Notices)
+              </h2>
+              <p class="text-xs text-slate-600 mt-1" data-i18n="notices.homeSubtitle">
+                नाशिक जिल्हाधिकारी कार्यालय, पोलीस प्रशासन आणि आपत्ती व्यवस्थापन प्राधिकरणाची अधिकृत परिपत्रके
+              </p>
+            </div>
+            <a href="#notices" data-nav-target="notices" class="text-xs font-bold text-blue-700 hover:text-blue-900 inline-flex items-center gap-1.5 whitespace-nowrap" data-i18n="notices.viewAll">
+              सर्व परिपत्रके पहा
+            </a>
+          </div>
+
+          <div id="home-notices-preview" class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <!-- Dynamically populated by app.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- SAFETY DO'S AND DON'TS -->
+      <section class="max-w-7xl mx-auto px-4 py-12" aria-labelledby="home-safety-heading">
+        <div class="text-center max-w-2xl mx-auto mb-8">
+          <h2 id="home-safety-heading" class="text-2xl sm:text-3xl font-extrabold text-slate-900" data-i18n="safety.homeTitle">
+            सुरक्षितता मार्गदर्शक: काय करावे आणि काय करू नये
+          </h2>
+          <p class="text-slate-600 text-sm mt-1" data-i18n="safety.homeSubtitle">
+            आपली व आपल्या कुटुंबाची सुरक्षितता हीच सिंहस्थ कुंभमेळ्याची सर्वोच्च प्राथमिकता आहे.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Do's -->
+          <div class="bg-white p-6 rounded-xl border border-emerald-200 shadow-sm">
+            <h3 class="text-lg font-bold text-emerald-800 flex items-center gap-2 mb-4" data-i18n="safety.dosTitle">
+              <span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg></span>
+              काय करावे (Do's)
+            </h3>
+            <ul class="space-y-3 text-sm text-slate-700">
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-600 font-bold">•</span>
+                <span data-i18n="safety.do1">नेहमी प्रशासनाने निश्चित केलेल्या अधिकृत व सुरक्षारक्षक असलेल्या स्नान घाटांचाच वापर करा.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-600 font-bold">•</span>
+                <span data-i18n="safety.do2">लहान मुले आणि ज्येष्ठांच्या खिशात नाव, संपर्क क्रमांक व पत्ता असलेली अधिकृत माहिती-पट्टी ठेवा.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-600 font-bold">•</span>
+                <span data-i18n="safety.do3">आपत्कालीन परिस्थितीत शांत राहा आणि पोलीस व सुरक्षा कर्मचाऱ्यांच्या सूचनांचे पालन करा.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-600 font-bold">•</span>
+                <span data-i18n="safety.do4">फक्त पॅकबंद किंवा महानगरपालिकेने तपासणी केलेल्या स्वच्छ पाणी केंद्रांमधील पाणी प्या.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Don'ts -->
+          <div class="bg-white p-6 rounded-xl border border-rose-200 shadow-sm">
+            <h3 class="text-lg font-bold text-rose-800 flex items-center gap-2 mb-4" data-i18n="safety.dontsTitle">
+              <span class="w-6 h-6 rounded-full bg-rose-100 text-rose-700 flex items-center justify-center"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"/></svg></span>
+              काय करू नये (Don'ts)
+            </h3>
+            <ul class="space-y-3 text-sm text-slate-700">
+              <li class="flex items-start gap-2.5">
+                <span class="text-rose-600 font-bold">•</span>
+                <span data-i18n="safety.dont1">गोदावरी पात्रातील धोकादायक अथवा बॅरिकेड्सने बंद केलेल्या खोल डोहात पोहण्याचा प्रयत्न करू नका.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-rose-600 font-bold">•</span>
+                <span data-i18n="safety.dont2">गर्दीच्या ठिकाणी अफवा पसरवू नका; सोशल मीडियावरील असत्यापित संदेशांवर विश्वास ठेवू नका.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-rose-600 font-bold">•</span>
+                <span data-i18n="safety.dont3">प्लॅस्टिकचा वापर टाळा; पवित्र गोदावरी नदीत कचरा किंवा निर्माल्य टाकू नका.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-rose-600 font-bold">•</span>
+                <span data-i18n="safety.dont4">संशयास्पद अथवा बेवारस वस्तूंना हात लावू नका; तात्काळ पोलिसांना किंवा ११२ क्रमांकावर कळवा.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOST PERSON 4-STEP PROTOCOL -->
+      <section class="bg-slate-50 border-t border-slate-200 py-12 px-4" aria-labelledby="lost-child-heading">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center max-w-2xl mx-auto mb-8">
+            <span class="text-xs font-bold uppercase tracking-wider text-rose-700 bg-rose-50 px-2.5 py-1 rounded" data-i18n="safety.emergencyBadge">आपत्कालीन कार्यपद्धती</span>
+            <h2 id="lost-child-heading" class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2" data-i18n="safety.lostChildTitle">
+              हरवलेली व्यक्ती / बालकांसाठी ४-टप्प्यांची एकात्मिक कार्यपद्धती
+            </h2>
+            <p class="text-slate-600 text-xs sm:text-sm mt-1" data-i18n="safety.lostChildSubtitle">
+              कुंभमेळ्यातील गर्दीत कोणी हरवल्यास तात्काळ करावयाची अधिकृत सुरक्षा कृती
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="bg-white p-5 rounded-xl border border-slate-200 relative shadow-sm">
+              <div class="text-rose-600 font-mono text-2xl font-black mb-2" data-i18n="safety.step1Num">०१</div>
+              <h3 class="text-base font-bold text-slate-900 mb-1" data-i18n="safety.step1Title">१. नजीकच्या मदत कक्षात जा</h3>
+              <p class="text-xs text-slate-600 leading-relaxed" data-i18n="safety.step1Desc">
+                प्रत्येक घाटावर व चौकात स्थापन केलेल्या ‘कुंभदूत / पोलीस मदत कक्षा’मध्ये त्वरित संपर्क साधा.
+              </p>
+            </div>
+
+            <div class="bg-white p-5 rounded-xl border border-slate-200 relative shadow-sm">
+              <div class="text-blue-600 font-mono text-2xl font-black mb-2" data-i18n="safety.step2Num">०२</div>
+              <h3 class="text-base font-bold text-slate-900 mb-1" data-i18n="safety.step2Title">२. डिजिटल छायाचित्र नोंदणी</h3>
+              <p class="text-xs text-slate-600 leading-relaxed" data-i18n="safety.step2Desc">
+                केंद्रीय प्रणालीत व्यक्तीचे नाव, वय, कपड्यांचा रंग आणि फोटो तात्काळ नोंदवला जातो.
+              </p>
+            </div>
+
+            <div class="bg-white p-5 rounded-xl border border-slate-200 relative shadow-sm">
+              <div class="text-amber-600 font-mono text-2xl font-black mb-2" data-i18n="safety.step3Num">०३</div>
+              <h3 class="text-base font-bold text-slate-900 mb-1" data-i18n="safety.step3Title">३. सर्व घाटांवर एकाच वेळी घोषणा</h3>
+              <p class="text-xs text-slate-600 leading-relaxed" data-i18n="safety.step3Desc">
+                सर्व घाटांवर आणि बस स्टॅण्डवर एकाच वेळी बहुभाषिक ध्वनिक्षेपकावरून अनाउन्समेंट केली जाते.
+              </p>
+            </div>
+
+            <div class="bg-white p-5 rounded-xl border border-slate-200 relative shadow-sm">
+              <div class="text-emerald-600 font-mono text-2xl font-black mb-2" data-i18n="safety.step4Num">०४</div>
+              <h3 class="text-base font-bold text-slate-900 mb-1" data-i18n="safety.step4Title">४. सुरक्षित पुनर्मिलन केंद्र</h3>
+              <p class="text-xs text-slate-600 leading-relaxed" data-i18n="safety.step4Desc">
+                व्यक्ती सुरक्षितपणे पुनर्मिलन कक्षात आणली जाऊन ओळख पटवून नातेवाईकांच्या स्वाधीन केली जाते.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ========================================== -->
+    <!-- VIEW: 2. SCHEDULE PAGE                     -->
+    <!-- ========================================== -->
+    <div id="page-schedule" class="page-view hidden max-w-7xl mx-auto px-4 py-8">
+      <div class="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 pb-5">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-2 py-0.5 rounded" data-i18n="keyDates.title">प्रस्तावित पर्व वेळापत्रक</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1" data-i18n="keyDates.heading">
+            शाही स्नान वेळापत्रक व आखाडा कार्यक्रम (Shahi Snan Schedule)
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1 font-medium" data-i18n="keyDates.note">
+            अखिल भारतीय आखाडा परिषद, पुरोहित संघ आणि महाराष्ट्र शासन मान्यताप्राप्त अधिकृत तिथी
+          </p>
+        </div>
+
+        <!-- Download & Calendar Actions -->
+        <div class="flex items-center gap-2 flex-wrap">
+          <button onclick="simulatePdfDownload('schedule-pdf', 'सिंहस्थ २०२७ प्रस्तावित वेळापत्रक माहिती')" class="bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold px-3.5 py-2.5 rounded border border-slate-300 flex items-center gap-1.5 transition">
+            <svg class="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd"/></svg>
+            <span data-i18n="keyDates.downloadPdf">प्रस्तावित वेळापत्रक माहिती (PDF)</span>
+          </button>
+          <button onclick="window.openKumbhDootAssistant('snan')" class="bg-kumbhdoot-cta hover:bg-kumbhdoot-ctaHover text-white text-xs font-bold px-3.5 py-2.5 rounded shadow-sm flex items-center gap-1.5 transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"/></svg>
+            <span data-i18n="kumbhdootCta.contextSchedule">आजच्या स्नानाविषयी विचारा</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Schedule Category Filters (Vercel Style Segmented Controls) -->
+      <div class="flex items-center gap-2 mb-6 overflow-x-auto pb-2 scrollbar-none" role="group" aria-label="Schedule category filter">
+        <button data-schedule-filter="all" data-i18n="ui.scheduleFilterAll" class="flex-shrink-0 px-4 py-2 text-xs font-bold rounded-lg bg-gov-header text-white transition tap-target whitespace-nowrap shadow-sm" aria-pressed="true">सर्व तिथी व विधी (All Dates)</button>
+        <button data-schedule-filter="shahi" data-i18n="ui.scheduleFilterShahi" class="flex-shrink-0 px-4 py-2 text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 transition tap-target whitespace-nowrap" aria-pressed="false">अमृत / शाही स्नान (Amrit Snan)</button>
+        <button data-schedule-filter="parva" data-i18n="ui.scheduleFilterParva" class="flex-shrink-0 px-4 py-2 text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 transition tap-target whitespace-nowrap" aria-pressed="false">पर्व स्नान व उत्सव (Parva Snan)</button>
+        <button data-schedule-filter="ceremony" data-i18n="ui.scheduleFilterCeremony" class="flex-shrink-0 px-4 py-2 text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 transition tap-target whitespace-nowrap" aria-pressed="false">ध्वजारोहण व सांगता (Ceremonies)</button>
+      </div>
+
+      <!-- Schedule Cards Grid -->
+      <div id="schedule-cards-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Dynamically rendered by app.js -->
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- VIEW: 3. MAP & PLACES PAGE                 -->
+    <!-- ========================================== -->
+    <div id="page-map" class="page-view hidden max-w-7xl mx-auto px-4 py-8">
+      <div class="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 pb-5">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-2 py-0.5 rounded" data-i18n="heritage.badge">तीर्थक्षेत्र जीआयएस</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1" data-i18n="nav.map">
+            तीर्थक्षेत्र नकाशा व महत्त्वाची ठिकाणे (Places & Map)
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1" data-i18n="heritage.subtitle">
+            पवित्र घाट, सॅटेलाइट पार्किंग, बस शटल पिकअप, मोफत वैद्यकीय केंद्रे आणि पोलीस चौक्यांची स्थाने
+          </p>
+        </div>
+
+        <button onclick="window.openKumbhDootAssistant('directions')" class="bg-kumbhdoot-cta hover:bg-kumbhdoot-ctaHover text-white text-xs font-bold px-4 py-2.5 rounded shadow-sm flex items-center gap-1.5 transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"/></svg>
+          <span data-i18n="kumbhdootCta.contextMap">कुंभदूतला मार्ग विचारा</span>
+        </button>
+      </div>
+
+      <!-- Map Search & Filters Row -->
+      <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm mb-6 flex flex-col md:flex-row gap-3 items-center justify-between">
+        <div class="relative w-full md:w-80">
+          <input id="map-search-input" type="search" placeholder="घाट किंवा सुविधा शोधा..." data-i18n-placeholder="ui.mapSearchPlaceholder" class="w-full text-xs py-2 pl-8 pr-3 rounded border border-slate-300 text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <svg class="w-4 h-4 text-slate-400 absolute left-2.5 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </div>
+
+        <!-- City Selector -->
+        <div class="flex items-center gap-2 w-full md:w-auto">
+          <label for="map-city-select" class="text-xs font-bold text-slate-700 whitespace-nowrap" data-i18n="ui.filterCity">शहर निवडा:</label>
+          <select id="map-city-select" class="text-xs py-2 px-3 rounded border border-slate-300 bg-white font-medium text-slate-800 focus:ring-2 focus:ring-blue-500">
+            <option value="all" data-i18n="ui.allCities">सर्व शहरे (नाशिक व त्र्यंबकेश्वर)</option>
+            <option value="Nashik" data-i18n="ui.nashikOnly">फक्त नाशिक (Nashik)</option>
+            <option value="Trimbakeshwar" data-i18n="ui.trimbakOnly">फक्त त्र्यंबकेश्वर (Trimbak)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Map Category Filter Buttons -->
+      <div class="flex items-center gap-2 mb-6 overflow-x-auto pb-2 scrollbar-none" role="group" aria-label="Facility Category Filters">
+        <button data-map-filter="all" data-i18n="ui.mapFilterAll" class="flex-shrink-0 px-3.5 py-1.5 text-xs font-bold rounded-lg bg-gov-header text-white transition tap-target whitespace-nowrap" aria-pressed="true">सर्व सुविधा (All)</button>
+        <button data-map-filter="ghat" data-i18n="ui.mapFilterGhats" class="flex-shrink-0 px-3.5 py-1.5 text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 transition tap-target whitespace-nowrap" aria-pressed="false">पवित्र घाट (Ghats)</button>
+        <button data-map-filter="parking" data-i18n="ui.mapFilterParking" class="flex-shrink-0 px-3.5 py-1.5 text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 transition tap-target whitespace-nowrap" aria-pressed="false">पार्किंग हब (Parking)</button>
+        <button data-map-filter="shuttle" data-i18n="ui.mapFilterShuttles" class="flex-shrink-0 px-3.5 py-1.5 text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 transition tap-target whitespace-nowrap" aria-pressed="false">बस शटल (Shuttles)</button>
+        <button data-map-filter="medical" data-i18n="ui.mapFilterMedical" class="flex-shrink-0 px-3.5 py-1.5 text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 transition tap-target whitespace-nowrap" aria-pressed="false">वैद्यकीय मदत (Medical)</button>
+        <button data-map-filter="police" data-i18n="ui.mapFilterPolice" class="flex-shrink-0 px-3.5 py-1.5 text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 transition tap-target whitespace-nowrap" aria-pressed="false">पोलीस मदत (Police)</button>
+        <button data-map-filter="water_toilet" data-i18n="ui.mapFilterSanitation" class="flex-shrink-0 px-3.5 py-1.5 text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 transition tap-target whitespace-nowrap" aria-pressed="false">पाणी व स्वच्छता (Sanitation)</button>
+      </div>
+
+      <!-- Visual Locations Grid -->
+      <div id="map-locations-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+        <!-- Rendered by map.js -->
+      </div>
+
+      <!-- GIGW 3.0 ACCESSIBILITY FEATURE: Text List Alternative for Screen Readers -->
+      <section class="bg-white rounded-xl border border-slate-300 shadow-sm p-6" aria-labelledby="accessible-list-heading">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 id="accessible-list-heading" class="text-lg font-bold text-slate-900 flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-blue-600 inline-block"></span>
+              <span data-i18n="ui.accessibleListTitle">स्क्रीन रीडर व सुलभता मजकूर यादी (Accessible Text List Alternative)</span>
+            </h3>
+            <p class="text-xs text-slate-500" data-i18n="ui.accessibleListDesc">
+              GIGW 3.0 व WCAG 2.1 निकषांनुसार नकाशा पाहू न शकणाऱ्या किंवा कमी नेटवर्क असणाऱ्या भाविकांसाठी संपूर्ण मजकूर तक्ता.
+            </p>
+          </div>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse" role="table">
+            <thead>
+              <tr class="bg-slate-100 text-xs font-bold text-slate-700 uppercase border-b border-slate-300">
+                <th class="p-3" data-i18n="ui.mapTableSr">अ.क्र.</th>
+                <th class="p-3" data-i18n="ui.mapTableName">ठिकाणाचे नाव व माहिती</th>
+                <th class="p-3" data-i18n="ui.mapTableCategory">प्रवर्ग</th>
+                <th class="p-3" data-i18n="ui.mapTableCity">शहर</th>
+                <th class="p-3" data-i18n="ui.mapTableFacilities">उपलब्ध सुविधा</th>
+                <th class="p-3" data-i18n="ui.mapTableLink">नकाशा लिंक</th>
+              </tr>
+            </thead>
+            <tbody id="accessible-text-list-body">
+              <!-- Dynamically rendered by map.js -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- VIEW: 4. TRANSPORT & TRAFFIC PAGE          -->
+    <!-- ========================================== -->
+    <div id="page-transport" class="page-view hidden max-w-7xl mx-auto px-4 py-8">
+      <div class="mb-6 border-b border-slate-200 pb-5">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded" data-i18n="transport.badge">वाहतूक व्यवस्था</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1" data-i18n="transport.title">
+          वाहतूक, पार्किंग व विशेष शटल व्यवस्था (Transport & Parking)
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1" data-i18n="transport.subtitle">
+          रेल्वे स्थानक, एसटी बस टर्मिनल्स, सॅटेलाइट पार्किंग हब आणि पादचारी नो-व्हेईकल झोनची माहिती
+        </p>
+      </div>
+
+      <!-- Rail & Bus Row -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <!-- Rail -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/></svg></span>
+            <h3 class="text-lg font-bold text-slate-900" data-i18n="transport.railTitle">रेल्वे वाहतूक व्यवस्था (Indian Railways)</h3>
+          </div>
+          <p class="text-sm text-slate-700 mb-3" data-i18n="transport.railDesc">नाशिक रोड रेल्वे स्थानकावरून पंचवटी आणि तपोवन घाटाकडे जाणाऱ्या मोफत इलेक्ट्रिक बस शटल्स दर ३ ते ५ मिनिटांनी उपलब्ध असतील.</p>
+          <div class="text-xs text-slate-500 bg-slate-50 p-3 rounded space-y-1">
+            <div><strong data-i18n="transport.railKeyStationLabel">प्रमुख स्थानक:</strong> <span data-i18n="transport.railKeyStationVal">नाशिक रोड (NK) जंक्शन</span></div>
+            <div><strong data-i18n="transport.railDistanceLabel">घाटाचे अंतर:</strong> <span data-i18n="transport.railDistanceVal">९ किमी (समर्पित बस कॉरिडोअरने १५-२० मिनिटे)</span></div>
+            <div><strong data-i18n="transport.railFacilitiesLabel">सुविधा:</strong> <span data-i18n="transport.railFacilitiesVal">क्लॉक रूम, रुग्णवाहिका, २४x७ हेल्पडेस्क</span></div>
+          </div>
+        </div>
+
+        <!-- Bus -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="w-8 h-8 rounded-lg bg-blue-50 text-blue-700 flex items-center justify-center"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg></span>
+            <h3 class="text-lg font-bold text-slate-900" data-i18n="transport.busTitle">एसटी व तीर्थक्षेत्र शटल बसेस (MSRTC)</h3>
+          </div>
+          <p class="text-sm text-slate-700 mb-3" data-i18n="transport.busDesc">महाराष्ट्रभरातून येणाऱ्या भाविकांसाठी ३,५००+ विशेष कुंभ बसेस आणि शहराबाहेरील पार्किंगमधून सतत रिंगरोड शटल्स.</p>
+          <div class="text-xs text-slate-500 bg-slate-50 p-3 rounded space-y-1">
+            <div><strong data-i18n="transport.busKeyDepotsLabel">प्रमुख बस पोर्ट:</strong> <span data-i18n="transport.busKeyDepotsVal">ठक्कर बाजार, महामार्ग, आडगाव तात्पुरते बस पोर्ट</span></div>
+            <div><strong data-i18n="transport.busTrimbakLabel">त्र्यंबकेश्वर सेवा:</strong> <span data-i18n="transport.busTrimbakVal">नाशिक ते त्र्यंबक दर २ मिनिटांनी थेट बस फेरी</span></div>
+            <div><strong data-i18n="transport.busFareLabel">भाडे:</strong> <span data-i18n="transport.busFareVal">सॅटेलाइट पार्किंग ते घाट प्रवास पूर्णपणे मोफत</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Parking Zones Section -->
+      <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 mb-8">
+        <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span class="w-6 h-6 rounded bg-amber-500 text-white font-bold flex items-center justify-center text-xs">P</span>
+          <span data-i18n="transport.parkingTitle">शहराबाहेरील सॅटेलाइट पार्किंग हब (Outer Satellite Parking Hubs)</span>
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 mb-4">
+          <span data-i18n="transport.parkingSubtitle">सर्व खाजगी वाहने (कार, ट्रॅव्हल्स बसेस) खालील निश्चित पार्किंग झोनमध्ये लावणे अनिवार्य आहे.</span>
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-white p-4 rounded-lg border border-slate-200">
+            <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded" data-i18n="transport.p1Zone">झोन P1 - आडगाव</span>
+            <h4 class="text-sm font-bold text-slate-900 mt-2" data-i18n="transport.p1Highway">मुंबई-धुळे महामार्ग (NH-3)</h4>
+            <p class="text-xs text-slate-600 mt-1" data-i18n="transport.p1Desc">उत्तर व पूर्व महाराष्ट्रातून येणाऱ्या वाहनांसाठी. १२,००० वाहनांची क्षमता. थेट तपोवन शटल कॉरिडोअर.</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border border-slate-200">
+            <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded" data-i18n="transport.p2Zone">झोन P2 - अंबड</span>
+            <h4 class="text-sm font-bold text-slate-900 mt-2" data-i18n="transport.p2Highway">पुणे-नाशिक महामार्ग (NH-60)</h4>
+            <p class="text-xs text-slate-600 mt-1" data-i18n="transport.p2Desc">पुणे व दक्षिण भारतातून येणाऱ्या वाहनांसाठी. १५,००० वाहनांची क्षमता. द्वारका व पंचवटी शटल मार्ग.</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border border-slate-200">
+            <span class="text-xs font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded" data-i18n="transport.p3Zone">झोन P3 - त्र्यंबक रोड</span>
+            <h4 class="text-sm font-bold text-slate-900 mt-2" data-i18n="transport.p3Highway">सातपूर व त्र्यंबक बायपास</h4>
+            <p class="text-xs text-slate-600 mt-1" data-i18n="transport.p3Desc">त्र्यंबकेश्वर मंदिराकडे जाणाऱ्या वाहनांसाठी. ८,००० क्षमता. मंदिर परिसराकडे इलेक्ट्रिक बसेस.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- No Vehicle Pedestrian Sacred Ring -->
+      <div class="bg-rose-50 border-l-4 border-rose-500 p-5 rounded-r">
+        <h4 class="text-sm font-bold text-rose-900" data-i18n="transport.noVehicleTitle">पादचारी व नो-व्हेईकल झोन (Strict Zero-Vehicle Sacred Zones)</h4>
+        <p class="text-xs text-rose-800 mt-1 leading-relaxed" data-i18n="transport.noVehicleDesc">
+          शाही स्नानाच्या दिवशी रामकुंड परिसर, दोन्ही गोदावरी तट (२ किमी परिघ) आणि त्र्यंबकेश्वर कुशावर्त परिसरामध्ये कोणत्याही वाहनांना (दोन चाकी व चार चाकी) प्रवेश दिला जाणार नाही. केवळ रुग्णवाहिका व अत्यावश्यक सेवा वाहनांना परवानगी असेल.
+        </p>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- VIEW: 5. SAFETY & HELPLINES PAGE           -->
+    <!-- ========================================== -->
+    <div id="page-safety" class="page-view hidden max-w-7xl mx-auto px-4 py-8">
+      <div class="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 pb-5">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-rose-700 bg-rose-50 px-2 py-0.5 rounded" data-i18n="safety.emergencyBadge">आपत्कालीन नियंत्रण</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1" data-i18n="safety.emergencyTitle">
+            सुरक्षा, आपत्कालीन संपर्क व नियंत्रण कक्ष (Safety & Helplines)
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1" data-i18n="safety.emergencySubtitle">
+            २४x७ आपत्कालीन संपर्क क्रमांक, महिला व बालक सुरक्षा, आपत्ती नियंत्रण मार्गदर्शक
+          </p>
+        </div>
+
+        <button onclick="window.openKumbhDootAssistant('safety')" class="bg-kumbhdoot-cta hover:bg-kumbhdoot-ctaHover text-white text-xs font-bold px-4 py-2.5 rounded shadow-sm flex items-center gap-1.5 transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"/></svg>
+          <span data-i18n="kumbhdootCta.contextSafety">कुंभदूत तात्काळ सुरक्षा मदत</span>
+        </button>
+      </div>
+
+      <!-- Emergency Numbers Grid -->
+      <div class="mb-10">
+        <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <span class="w-6 h-6 rounded bg-rose-100 text-rose-700 inline-flex items-center justify-center mr-1.5"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg></span> <span data-i18n="safety.numbersTitle">२४x७ राष्ट्रीय व शासकीय आपत्कालीन संपर्क क्रमांक (Emergency Numbers)</span>
+        </h3>
+        <div id="emergency-numbers-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Dynamically populated by app.js -->
+        </div>
+      </div>
+
+      <!-- Women and Child Safety Dedicated Section -->
+      <div class="bg-purple-50/60 border border-purple-200 rounded-xl p-6 mb-10">
+        <h3 class="text-lg font-bold text-purple-900 mb-2 flex items-center gap-2">
+          <span class="w-6 h-6 rounded bg-blue-100 text-blue-700 inline-flex items-center justify-center mr-1.5"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></span> <span data-i18n="safety.womenSectionTitle">महिला, बालके व ज्येष्ठ नागरिकांची विशेष सुरक्षा</span>
+        </h3>
+        <p class="text-xs sm:text-sm text-purple-800 mb-5">
+          <span data-i18n="safety.womenSectionSubtitle">महिला व बालकांसाठी सर्व घाटांवर स्वतंत्र, सुरक्षित आणि संवेदनशील सुविधा उपलब्ध करण्यात आल्या आहेत.</span>
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-white p-4 rounded-lg border border-purple-200">
+            <h4 class="text-sm font-bold text-purple-950 mb-1" data-i18n="safety.pinkBoothTitle">पिंक पोलीस मदत केंद्र (Pink Booths)</h4>
+            <p class="text-xs text-slate-600" data-i18n="safety.pinkBoothDesc">सर्व घाटांवर महिला पोलीस अधिकाऱ्यांची स्वतंत्र मदत केंद्रे, जिथे महिला भाविकांना त्वरित तक्रार नोंदणी व मदत मिळेल.</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border border-purple-200">
+            <h4 class="text-sm font-bold text-purple-950 mb-1" data-i18n="safety.hirkaniTitle">हिरकणी कक्ष (माता-बाल संगोपन)</h4>
+            <p class="text-xs text-slate-600" data-i18n="safety.hirkaniDesc">स्तनपान करणाऱ्या मातांसाठी व लहान बालकांच्या काळजीसाठी स्वच्छ, सुरक्षित, पडद्याची वातानुकूलित स्वतंत्र व्यवस्था.</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border border-purple-200">
+            <h4 class="text-sm font-bold text-purple-950 mb-1" data-i18n="safety.changingRoomTitle">सुरक्षित चेंजिंग रूम्स</h4>
+            <p class="text-xs text-slate-600" data-i18n="safety.changingRoomDesc">स्नानानंतर कपडे बदलण्यासाठी १००+ वॉटरप्रूफ, योग्य प्रकाशयोजना असलेली आणि महिला सुरक्षारक्षक तैनात असलेली चेंजिंग रूम्स.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- VIEW: 6. LOST & FOUND PORTAL               -->
+    <!-- ========================================== -->
+    <div id="page-lost-found" class="page-view hidden max-w-7xl mx-auto px-4 py-8">
+      <div class="mb-6 flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 pb-5">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-purple-700 bg-purple-50 px-2 py-0.5 rounded" data-i18n="lostFound.badge">कुटुंब पुनर्मिलन</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1" data-i18n="lostFound.title">
+            हरवले व सापडले नियंत्रण कक्ष (Lost & Found Portal)
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1" data-i18n="lostFound.subtitle">
+            हरवलेल्या व्यक्तींचा शोध, सापडलेल्या साहित्याची नोंदणी व मध्यवर्ती मदत कक्ष संपर्क
+          </p>
+        </div>
+
+        <button onclick="window.openKumbhDootAssistant('lostfound')" class="bg-kumbhdoot-cta hover:bg-kumbhdoot-ctaHover text-white text-xs font-bold px-4 py-2.5 rounded shadow-sm flex items-center gap-1.5 transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"/></svg>
+          <span data-i18n="kumbhdootCta.contextLostFound">कुंभदूतवर व्यक्ती/वस्तू नोंदवा</span>
+        </button>
+      </div>
+
+      <!-- Navigation Tabs: Search vs Report -->
+      <div class="flex items-center gap-2 mb-6" role="tablist">
+        <button id="lf-tab-search" data-i18n="lostFound.tabSearch" class="px-5 py-2.5 text-xs sm:text-sm font-bold rounded-lg bg-gov-header text-white transition tap-target" role="tab" aria-selected="true">
+          <span class="flex items-center gap-1.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg> <span>नोंदी शोधा (Search Registry)</span></span>
+        </button>
+        <button id="lf-tab-report" data-i18n="lostFound.tabReport" class="px-5 py-2.5 text-xs sm:text-sm font-bold rounded-lg bg-slate-100 text-slate-700 hover:bg-slate-200 transition tap-target" role="tab" aria-selected="false">
+          <span class="flex items-center gap-1.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg> <span>नवीन नोंद करा (Report Missing/Found)</span></span>
+        </button>
+      </div>
+
+      <!-- SECTION A: Search Registry -->
+      <div id="lf-section-search">
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm mb-6 flex flex-col sm:flex-row gap-3 items-center justify-between">
+          <div class="relative w-full sm:w-96">
+            <input id="lf-search-input" type="search" placeholder="नाव, कपड्यांचा रंग किंवा ठिकाण शोधा..." class="w-full text-xs py-2 pl-8 pr-3 rounded border border-slate-300 text-slate-900 focus:outline-none focus:ring-2 focus:ring-purple-500">
+            <svg class="w-4 h-4 text-slate-400 absolute left-2.5 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+
+          <!-- Type filter: All / Persons / Items -->
+          <div class="flex items-center gap-1.5 w-full sm:w-auto" role="group">
+            <button data-lf-filter="all" data-i18n="lostFound.filterAll" class="px-3 py-1.5 text-xs font-bold rounded bg-slate-900 text-white tap-target">सर्व नोंदी</button>
+            <button data-lf-filter="person" data-i18n="lostFound.filterPerson" class="px-3 py-1.5 text-xs font-bold rounded bg-slate-100 text-slate-700 hover:bg-slate-200 tap-target">फक्त व्यक्ती (Persons)</button>
+            <button data-lf-filter="item" data-i18n="lostFound.filterItem" class="px-3 py-1.5 text-xs font-bold rounded bg-slate-100 text-slate-700 hover:bg-slate-200 tap-target">साहित्य/बॅगा (Articles)</button>
+          </div>
+        </div>
+
+        <div id="lf-cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <!-- Dynamically populated by lost-found.js -->
+        </div>
+      </div>
+
+      <!-- SECTION B: Report Form -->
+      <div id="lf-section-report" class="hidden max-w-2xl bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-sm">
+        <h3 class="text-lg font-bold text-slate-900 mb-2" data-i18n="lostFound.reportTitle">हरवलेल्या व्यक्ती किंवा साहित्याची प्राथमिक नोंदणी</h3>
+        <p class="text-xs text-slate-500 mb-6" data-i18n="lostFound.reportSubtitle">
+          ही माहिती मध्यवर्ती पोलीस व कुंभदूत मदत नेटवर्कवर त्वरित प्रसारित केली जाईल.
+        </p>
+
+        <div id="lf-form-feedback"></div>
+
+        <form id="lf-report-form" class="space-y-4">
+          <div>
+            <label for="report-type" class="block text-xs font-bold text-slate-700 mb-1" data-i18n="lostFound.formTypeLabel">प्रकार निवडा *</label>
+            <select id="report-type" class="w-full text-xs p-2.5 border border-slate-300 rounded bg-white font-medium text-slate-800" required>
+              <option value="person" data-i18n="lostFound.optPerson">हरवलेली व्यक्ती (Missing Person)</option>
+              <option value="item" data-i18n="lostFound.optItem">हरवलेली वस्तू / बॅग (Lost Article/Luggage)</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="report-name" class="block text-xs font-bold text-slate-700 mb-1" data-i18n="lostFound.formNameLabel">व्यक्तीचे नाव किंवा वस्तूचा तपशील *</label>
+            <input id="report-name" type="text" placeholder="उदा. सुरेश कांबळे किंवा निळी ट्रॅव्हल बॅग" data-i18n-placeholder="lostFound.formNamePlaceholder" class="w-full text-xs p-2.5 border border-slate-300 rounded text-slate-900" required>
+          </div>
+
+          <div>
+            <label for="report-contact" class="block text-xs font-bold text-slate-700 mb-1" data-i18n="lostFound.formContactLabel">आपला संपर्क क्रमांक *</label>
+            <input id="report-contact" type="tel" placeholder="१० अंकी मोबाईल नंबर" data-i18n-placeholder="lostFound.formContactPlaceholder" class="w-full text-xs p-2.5 border border-slate-300 rounded text-slate-900" required>
+          </div>
+
+          <div>
+            <label for="report-location" class="block text-xs font-bold text-slate-700 mb-1" data-i18n="lostFound.formLocationLabel">शेवटचे ठिकाण (Last seen location) *</label>
+            <input id="report-location" type="text" placeholder="उदा. रामकुंड घाट, पायऱ्यांजवळ" data-i18n-placeholder="lostFound.formLocationPlaceholder" class="w-full text-xs p-2.5 border border-slate-300 rounded text-slate-900" required>
+          </div>
+
+          <div>
+            <label for="report-desc" class="block text-xs font-bold text-slate-700 mb-1" data-i18n="lostFound.formDescLabel">कपड्यांचा रंग / विशेष ओळख खूण *</label>
+            <textarea id="report-desc" rows="3" placeholder="उदा. पिवळा कुर्ता, पांढरी धोती, चष्मा, वय अंदाजे ६५ वर्षे" data-i18n-placeholder="lostFound.formDescPlaceholder" class="w-full text-xs p-2.5 border border-slate-300 rounded text-slate-900" required></textarea>
+          </div>
+
+          <div class="pt-2">
+            <button type="submit" class="w-full bg-gov-header hover:bg-slate-800 text-white font-bold text-sm py-3 rounded-lg shadow transition tap-target" data-i18n="lostFound.btnSubmit">
+              नोंदणी सबमिट करा (Submit Report)
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- VIEW: 7. VOLUNTEER REGISTRATION            -->
+    <!-- ========================================== -->
+    <div id="page-volunteer" class="page-view hidden max-w-7xl mx-auto px-4 py-8">
+      <div class="max-w-3xl mx-auto">
+        <div class="mb-6 border-b border-slate-200 pb-5">
+          <span class="text-xs font-bold uppercase tracking-wider text-orange-700 bg-orange-50 px-2 py-0.5 rounded" data-i18n="volunteer.badge">सिंहस्थ सेवा</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1" data-i18n="volunteer.title">
+            सिंहस्थ मित्र स्वयंसेवक नोंदणी (Volunteer Registration)
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1" data-i18n="volunteer.subtitle">
+            देशभरातून येणाऱ्या भाविकांच्या सेवेसाठी, गर्दी व्यवस्थापनासाठी आणि स्वच्छता अभियानासाठी स्वयंसेवक म्हणून सहभागी व्हा.
+          </p>
+        </div>
+
+        <div id="volunteer-form-feedback"></div>
+
+        <div class="bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-sm">
+          <form id="volunteer-registration-form" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="vol-name" class="block text-xs font-bold text-slate-700 mb-1" data-i18n="volunteer.formNameLabel">पूर्ण नाव *</label>
+                <input id="vol-name" type="text" placeholder="आपले नाव" data-i18n-placeholder="volunteer.formNamePlaceholder" class="w-full text-xs p-2.5 border border-slate-300 rounded text-slate-900" required>
+              </div>
+              <div>
+                <label for="vol-phone" class="block text-xs font-bold text-slate-700 mb-1" data-i18n="volunteer.formPhoneLabel">मोबाईल नंबर *</label>
+                <input id="vol-phone" type="tel" placeholder="१० अंकी फोन नंबर" data-i18n-placeholder="volunteer.formPhonePlaceholder" class="w-full text-xs p-2.5 border border-slate-300 rounded text-slate-900" required>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="vol-role" class="block text-xs font-bold text-slate-700 mb-1" data-i18n="volunteer.formRoleLabel">सेवा क्षेत्र (Preferred Role) *</label>
+                <select id="vol-role" class="w-full text-xs p-2.5 border border-slate-300 rounded bg-white text-slate-800 font-medium">
+                  <option value="भाविकांना मार्गदर्शन व मदत" data-i18n="volunteer.roleGuidance">भाविकांना मार्गदर्शन व मदत (Pilgrim Guidance)</option>
+                  <option value="गर्दी व्यवस्थापन व रांग नियंत्रण" data-i18n="volunteer.roleCrowd">गर्दी व्यवस्थापन व रांग नियंत्रण (Crowd Management)</option>
+                  <option value="स्वच्छ गोदावरी - स्वच्छता सेवा" data-i18n="volunteer.roleSwachh">स्वच्छ गोदावरी - स्वच्छता सेवा (Swachh Seva)</option>
+                  <option value="वैद्यकीय प्रथमोपचार सहाय्य" data-i18n="volunteer.roleFirstAid">वैद्यकीय प्रथमोपचार सहाय्य (First-Aid Assistance)</option>
+                  <option value="बहुभाषिक अनुवाद सहाय्य" data-i18n="volunteer.roleTranslation">बहुभाषिक अनुवाद सहाय्य (Multilingual Translation)</option>
+                </select>
+              </div>
+              <div>
+                <label for="vol-languages" class="block text-xs font-bold text-slate-700 mb-1" data-i18n="volunteer.formLangLabel">अवगत भाषा (Languages known)</label>
+                <input id="vol-languages" type="text" placeholder="उदा. मराठी, हिंदी, इंग्रजी, गुजराती" data-i18n-placeholder="volunteer.formLangPlaceholder" class="w-full text-xs p-2.5 border border-slate-300 rounded text-slate-900">
+              </div>
+            </div>
+
+            <!-- GIGW 3.0 & Digital Personal Data Privacy Consent Checkbox -->
+            <div class="p-3 bg-slate-50 border border-slate-200 rounded text-xs text-slate-600">
+              <label class="flex items-start gap-2.5 cursor-pointer">
+                <input id="vol-consent" type="checkbox" class="mt-0.5 rounded text-amber-600 focus:ring-amber-500" required>
+                <span data-i18n="volunteer.consentText">
+                  मी याद्वारे संमती देतो/देते की वरील माहिती केवळ सिंहस्थ कुंभमेळा स्वयंसेवक समन्वयासाठी वापरली जाईल. कोणत्याही व्यावसायिक हेतूसाठी ही माहिती सामायिक केली जाणार नाही. (DPDP Act 2023 compliant consent)
+                </span>
+              </label>
+            </div>
+
+            <div class="pt-2">
+              <button type="submit" class="w-full bg-gov-header hover:bg-slate-800 text-white font-bold text-sm py-3 rounded-lg shadow transition tap-target" data-i18n="volunteer.btnSubmit">
+                स्वयंसेवक नोंदणी सबमिट करा (Register as Volunteer)
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- VIEW: 8. NOTICES & PRESS RELEASES          -->
+    <!-- ========================================== -->
+    <div id="page-notices" class="page-view hidden max-w-7xl mx-auto px-4 py-8">
+      <div class="mb-6 border-b border-slate-200 pb-5">
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-2 py-0.5 rounded" data-i18n="notices.pageBadge">अधिकृत परिपत्रके</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1" data-i18n="notices.pageTitle">
+          शासकीय परिपत्रके व आदेश (Official Notices)
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1" data-i18n="notices.pageSubtitle">
+          नाशिक जिल्हाधिकारी कार्यालय, पोलीस प्रशासन आणि आपत्ती व्यवस्थापन प्राधिकरणाची अधिकृत परिपत्रके
+        </p>
+      </div>
+
+      <div id="notices-cards-container" class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <!-- Dynamically rendered by app.js -->
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- VIEW: 9. ABOUT & KUMBHDOOT AI ASSISTANT    -->
+    <!-- ========================================== -->
+    <div id="page-about" class="page-view hidden max-w-5xl mx-auto px-4 py-8">
+      <div class="mb-6 border-b border-slate-200 pb-5">
+        <span class="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-2.5 py-1 rounded" data-i18n="about.badge">डिजिटल तीर्थयात्रा</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1" data-i18n="about.title">
+          कुंभदूत AI सहाय्यक व पोर्टल परिचय
+        </h2>
+      </div>
+
+      <!-- KUMBHDOOT AI INTEGRATION BOX -->
+      <div class="bg-gradient-to-r from-orange-50 via-amber-50 to-orange-100 border border-orange-200 rounded-2xl p-6 sm:p-8 shadow-sm mb-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <div class="inline-block bg-kumbhdoot-cta text-white text-xs font-bold px-2.5 py-1 rounded mb-2" data-i18n="about.aiBadge">
+              महाराष्ट्र शासन अधिकृत AI सहाय्यक
+            </div>
+            <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-2" data-i18n="about.aiTitle">
+              कुंभदूत (KumbhDoot) - भाविकांचा व्हॉईस-फर्स्ट डिजिटल मार्गदर्शक
+            </h3>
+            <p class="text-slate-700 text-sm leading-relaxed mb-4" data-i18n="about.aiDesc">
+              गर्दीच्या ठिकाणी टाइप न करता थेट आपल्या भाषेत बोलून स्नान वेळापत्रक, जवळचे पार्किंग, पिण्याचे पाणी आणि वैद्यकीय मदत केंद्रांची अचूक माहिती मिळवा.
+            </p>
+            <button onclick="window.openKumbhDootAssistant('general')" class="bg-kumbhdoot-cta hover:bg-kumbhdoot-ctaHover text-white font-bold text-sm px-6 py-3 rounded-lg shadow flex items-center gap-2 transition">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"/></svg>
+              <span data-i18n="about.aiBtn">कुंभदूत AI सहाय्यकाशी आताच बोला</span>
+            </button>
+            <div class="mt-4 pt-3 border-t border-orange-200/70 flex items-center gap-3">
+              <a href="https://www.digitalindia.gov.in" target="_blank" rel="noopener noreferrer" class="bg-white px-2.5 py-1 rounded-lg border border-orange-200 shadow-2xs inline-flex items-center" title="Digital India">
+                <img src="./public/images/digital-india.png" alt="Digital India" class="h-7 w-auto object-contain">
+              </a>
+              <span class="text-xs text-slate-700 font-semibold" data-i18n="about.digitalIndiaAffiliation">डिजिटल इंडिया आणि महाराष्ट्र ई-प्रशासन उपक्रमांतर्गत नागरिक-केंद्री सेवा</span>
+            </div>
+          </div>
+          <div class="text-center flex-shrink-0">
+            <img src="./public/assets/qr-code.svg" alt="KumbhDoot AI Assistant QR Code" class="w-36 h-36 mx-auto bg-white p-2 rounded-xl border border-slate-200 shadow-sm">
+            <span class="text-[11px] font-bold text-slate-600 block mt-2" data-i18n="about.qrLabel">मुद्रणासाठी QR कोड</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PORTAL ARCHITECTURE & STANDARDS -->
+      <div class="bg-white rounded-xl border border-slate-200 p-6 sm:p-8 space-y-4 shadow-sm text-xs sm:text-sm text-slate-700 leading-relaxed">
+        <h3 class="text-lg font-bold text-slate-900" data-i18n="about.standardsTitle">पोर्टल वैशिष्ट्ये व तांत्रिक मानके (GIGW 3.0 & WCAG 2.1 AA)</h3>
+        <p data-i18n="about.standardsDesc">
+          हे महापोर्टल भारत सरकारच्या राष्ट्रीय संकेतस्थळ मार्गदर्शक तत्त्वे (GIGW 3.0) आणि WCAG 2.1 AA मानकांनुसार तयार करण्यात आले आहे. सर्व दिव्यांगजन, ज्येष्ठ नागरिक आणि विविध भाषिक भाविकांना अखंड डिजिटल सेवा पुरवणे हे याचे उद्दिष्ट आहे.
+        </p>
+        <ul class="space-y-1.5 list-disc pl-5">
+          <li><strong data-i18n="about.stdItem1Label">त्रिभाषिक रचना:</strong> <span data-i18n="about.stdItem1Text">मराठी (प्राथमिक), हिंदी आणि इंग्रजी पूर्ण समक्रमित.</span></li>
+          <li><strong data-i18n="about.stdItem2Label">सुलभता साधने:</strong> <span data-i18n="about.stdItem2Text">उच्च कॉन्ट्रास्ट, अक्षर आकार नियंत्रण (A- / A / A+), स्क्रीन रीडर तक्ता.</span></li>
+          <li><strong data-i18n="about.stdItem3Label">अतिजलद २G/३G कार्यक्षमता:</strong> <span data-i18n="about.stdItem3Text">कमी नेटवर्कवरही त्वरित लोड होणारे हलके डिझाइन.</span></li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- IN-PAGE KUMBHDOOT AI ASSISTANT MODAL (Interactive In-Page Drawer, Zero .app redirect!) -->
+  <div id="kumbhdoot-assistant-modal" class="app-modal fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-sm flex items-end sm:items-center justify-center p-0 sm:p-4 hidden" role="dialog" aria-modal="true" aria-labelledby="assistant-modal-title">
+    <div class="bg-white rounded-t-3xl sm:rounded-2xl max-w-lg w-full h-[85vh] sm:h-[620px] flex flex-col shadow-2xl border border-slate-200 overflow-hidden animate-in slide-in-from-bottom">
+      <!-- Modal Header -->
+      <div class="bg-gov-header text-white p-4 flex items-center justify-between border-b border-slate-700">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full bg-amber-500 text-slate-950 flex items-center justify-center font-bold">
+            <svg class="w-5 h-5 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+          </div>
+          <div>
+            <h3 id="assistant-modal-title" class="text-base font-bold text-white flex items-center gap-1.5">
+              <span data-i18n="assistantModal.title">कुंभदूत AI डिजिटल सहाय्यक</span>
+              <span class="text-[10px] bg-emerald-500 text-slate-950 font-black px-1.5 py-0.2 rounded" data-i18n="assistantModal.liveBadge">LIVE</span>
+            </h3>
+            <p class="text-xs text-slate-300" data-i18n="assistantModal.govSub">महाराष्ट्र शासन • नाशिक सिंहस्थ २०२७</p>
+          </div>
+        </div>
+        <button id="close-assistant-modal" class="text-slate-300 hover:text-white p-2 tap-target" aria-label="Close dialog"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+      </div>
+
+      <!-- Preset Question Pills Row -->
+      <div class="bg-slate-50 border-b border-slate-200 p-2.5 flex items-center gap-1.5 overflow-x-auto scrollbar-none text-xs">
+        <button data-query="पुढचे शाही स्नान कधी आहे?" data-i18n="assistantModal.pillSnan" class="assistant-preset-pill flex-shrink-0 px-3 py-1.5 rounded-full bg-white border border-slate-300 hover:border-amber-500 font-bold text-slate-700 transition">
+          पुढचे शाही स्नान कधी?
+        </button>
+        <button data-query="जवळचे सॅटेलाइट पार्किंग कुठे आहे?" data-i18n="assistantModal.pillParking" class="assistant-preset-pill flex-shrink-0 px-3 py-1.5 rounded-full bg-white border border-slate-300 hover:border-amber-500 font-bold text-slate-700 transition">
+          जवळचे पार्किंग कुठे?
+        </button>
+        <button data-query="तातडीची रुग्णवाहिका संपर्क 108" data-i18n="assistantModal.pillEmergency" class="assistant-preset-pill flex-shrink-0 px-3 py-1.5 rounded-full bg-white border border-slate-300 hover:border-amber-500 font-bold text-slate-700 transition">
+          आपत्कालीन मदत
+        </button>
+        <button data-query="हरवलेली व्यक्ती कशी नोंदवावी?" data-i18n="assistantModal.pillLostFound" class="assistant-preset-pill flex-shrink-0 px-3 py-1.5 rounded-full bg-white border border-slate-300 hover:border-amber-500 font-bold text-slate-700 transition">
+          हरवले-सापडले
+        </button>
+      </div>
+
+      <!-- Chat History Stream -->
+      <div id="assistant-chat-history" class="flex-grow p-4 overflow-y-auto space-y-3 text-xs sm:text-sm">
+        <!-- Default Welcome Greeting -->
+        <div class="flex justify-start">
+          <div class="bg-slate-100 text-slate-800 rounded-2xl rounded-tl-none px-4 py-3 max-w-[85%] shadow-sm border border-slate-200">
+            <div class="flex items-center gap-1.5 text-[11px] font-bold text-amber-800 mb-1">
+              <span data-i18n="assistantModal.sender">कुंभदूत AI सहाय्यक</span>
+            </div>
+            <p class="leading-relaxed" data-i18n="assistantModal.welcomeText">
+              जय गोदावरी! नाशिक-त्र्यंबकेश्वर सिंहस्थ कुंभमेळा २०२७ महापोर्टलवर आपले स्वागत आहे. मी आपला अधिकृत AI तीर्थयात्रा सहाय्यक आहे. आपण मला शाही स्नान तारखा, घाटांची माहिती, सॅटेलाइट पार्किंग, बस शटल किंवा आपत्कालीन वैद्यकीय मदतीविषयी थेट विचारू शकता!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Input Form -->
+      <div class="p-3 bg-white border-t border-slate-200">
+        <form id="assistant-chat-form" class="flex items-center gap-2">
+          <input id="assistant-chat-input" type="text" placeholder="आपला प्रश्न येथे टाईप करा किंवा विचारा..." data-i18n-placeholder="assistantModal.placeholder" class="flex-grow text-xs sm:text-sm py-2.5 px-3.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-amber-500 text-slate-900" required>
+          <button type="submit" class="bg-gov-header hover:bg-slate-800 text-white font-bold px-4 py-2.5 rounded-xl transition flex items-center gap-1.5 text-xs sm:text-sm tap-target">
+            <span data-i18n="assistantModal.sendBtn">पाठवा</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </form>
+        <div class="text-[10px] text-slate-400 text-center mt-2" data-i18n="assistantModal.dpdpNotice">
+          महाराष्ट्र शासन अधिकृत सुरक्षित माहिती प्रणाली • DPDP Act २०२३ संमत
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ON-SITE QR CODE MODAL DIALOG -->
+  <div id="qr-modal" class="app-modal fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4 hidden" role="dialog" aria-modal="true" aria-labelledby="qr-modal-title">
+    <div class="bg-white rounded-2xl max-w-sm w-full p-6 text-center shadow-2xl relative">
+      <button id="close-qr-modal" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 p-2 tap-target" aria-label="Close dialog"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+
+      <span class="inline-block bg-orange-100 text-orange-800 text-[11px] font-bold px-2.5 py-0.5 rounded-full mb-2" data-i18n="qrModal.badge">मुद्रण व फलकांसाठी अधिकृत QR कोड</span>
+      <h3 id="qr-modal-title" class="text-lg font-bold text-slate-900 mb-1" data-i18n="qrModal.title">कुंभमेळा पोर्टल व सहाय्यक</h3>
+      <p class="text-xs text-slate-500 mb-4" data-i18n="qrModal.desc">मोबाइल कॅमेराने स्कॅन करून महापोर्टल व कुंभदूत AI सहाय्यक वापरा.</p>
+
+      <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 inline-block mb-4">
+        <img src="./public/assets/qr-code.svg" alt="Official Kumbh Portal QR code" class="w-48 h-48 mx-auto">
+      </div>
+
+      <div class="text-xs font-mono font-bold text-amber-800 mb-4" data-i18n="qrModal.sub">नाशिक-त्र्यंबकेश्वर सिंहस्थ २०२७</div>
+
+      <div class="flex items-center gap-2">
+        <button onclick="window.print()" class="w-full bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold py-2.5 rounded-lg shadow transition tap-target flex items-center justify-center gap-2">
+          <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+          <span data-i18n="qrModal.printBtn">QR कोड प्रिंट करा</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOBILE STICKY BOTTOM BAR -->
+  <nav id="mobile-bottom-bar" class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-gov-header text-white border-t border-slate-700 shadow-2xl px-2 py-1.5 flex items-center justify-around text-[10px]" aria-label="Mobile quick actions">
+    <a href="#home" data-nav-target="home" class="flex flex-col items-center py-1 px-2 hover:text-amber-400 tap-target">
+      <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+      <span data-i18n="nav.home">मुख्यपृष्ठ</span>
+    </a>
+    <a href="#schedule" data-nav-target="schedule" class="flex flex-col items-center py-1 px-2 hover:text-amber-400 tap-target">
+      <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+      <span data-i18n="nav.schedule">वेळापत्रक</span>
+    </a>
+    <!-- Prominent Center KumbhDoot Assistant Trigger Button -->
+    <button onclick="window.openKumbhDootAssistant('general')" class="bg-kumbhdoot-cta text-white font-bold px-3 py-1.5 rounded-full shadow-lg flex flex-col items-center tap-target -mt-3 ring-4 ring-slate-900">
+      <svg class="w-5 h-5 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"/></svg>
+      <span id="bottom-bar-kd-label" class="text-[9px] font-extrabold whitespace-nowrap" data-i18n="kumbhdootCta.mobileLabel">कुंभदूत AI</span>
+    </button>
+    <a href="#map" data-nav-target="map" class="flex flex-col items-center py-1 px-2 hover:text-amber-400 tap-target">
+      <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+      <span data-i18n="nav.map">नकाशा</span>
+    </a>
+    <a href="#safety" data-nav-target="safety" class="flex flex-col items-center py-1 px-2 hover:text-amber-400 tap-target">
+      <svg class="w-5 h-5 mb-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+      <span data-i18n="nav.safety">सुरक्षा</span>
+    </a>
+  </nav>
+
+  <!-- OFFICIAL GIGW 3.0 PRODUCTION FOOTER -->
+  <footer class="bg-slate-950 text-slate-300 pt-12 pb-24 lg:pb-12 border-t-2 border-amber-500 mt-16" role="contentinfo">
+    <div class="max-w-7xl mx-auto px-4">
+      <!-- Official Portal Certification & Seal -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-slate-800 pb-8 mb-8">
+        <div class="flex items-center gap-3">
+          <img src="./public/images/emb.jpg" alt="Emblem of India" class="h-11 sm:h-12 w-auto rounded object-contain">
+          <img src="./public/images/seal-maharashtra.png" alt="Seal of Maharashtra" class="h-12 w-auto">
+          <img src="./public/images/kumbh-mela-logo.png" alt="Kumbh Mela Logo" class="h-12 w-auto">
+          <div>
+            <h4 class="text-sm font-black text-white" data-i18n="footer.title">महाराष्ट्र शासन • नाशिक-त्र्यंबकेश्वर सिंहस्थ कुंभमेळा प्राधिकरण</h4>
+            <p class="text-xs text-slate-400">Government of Maharashtra • Nashik-Trimbakeshwar Kumbh Mela Authority (NTKMA)</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <a href="https://www.digitalindia.gov.in" target="_blank" rel="noopener noreferrer" class="bg-white hover:bg-slate-50 px-3 py-1.5 rounded-xl border border-slate-700 shadow-sm transition flex items-center" title="Digital India - Power To Empower (MeitY)">
+            <img src="./public/images/digital-india.png" alt="Digital India - Power To Empower" class="h-8 w-auto object-contain">
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer Columns -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8 text-xs">
+        <div>
+          <h4 class="font-bold text-white text-sm mb-3" data-i18n="footer.quickLinks">महत्त्वाचे दुवे</h4>
+          <ul class="space-y-2">
+            <li><a href="#schedule" class="hover:text-white" data-i18n="nav.schedule">शाही स्नान वेळापत्रक</a></li>
+            <li><a href="#map" class="hover:text-white" data-i18n="nav.map">तीर्थक्षेत्र नकाशा व घाट</a></li>
+            <li><a href="#transport" class="hover:text-white" data-i18n="nav.transport">वाहतूक व पार्किंग</a></li>
+            <li><a href="#safety" class="hover:text-white" data-i18n="nav.safety">सुरक्षा व नियंत्रण कक्ष</a></li>
+            <li><a href="#lost-found" class="hover:text-white" data-i18n="nav.lostFound">हरवले-सापडले कक्ष</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white text-sm mb-3" data-i18n="footer.policiesTitle">धोरणे व कायदेशीर</h4>
+          <ul class="space-y-2">
+            <li><a href="#about" class="hover:text-white" data-i18n="footer.accessibility">सुलभता विधान (Accessibility)</a></li>
+            <li><a href="#about" class="hover:text-white" data-i18n="footer.privacy">गोपनीयता धोरण (Privacy Policy)</a></li>
+            <li><a href="#about" class="hover:text-white" data-i18n="footer.terms">वापर नियम (Terms of Use)</a></li>
+            <li><a href="#about" class="hover:text-white" data-i18n="footer.disclaimer">अस्वीकरण (Disclaimer)</a></li>
+            <li><a href="#about" class="hover:text-white" data-i18n="footer.sitemap">साईटमॅप (Sitemap)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white text-sm mb-3" data-i18n="footer.officialPortals">अधिकृत शासकीय पोर्टल्स</h4>
+          <ul class="space-y-2">
+            <li><a href="https://nashik.gov.in" target="_blank" rel="noopener noreferrer" class="hover:text-white underline" data-i18n="footer.portalNashik">नाशिक जिल्हाधिकारी कार्यालय (nashik.gov.in)</a></li>
+            <li><a href="https://divcomnashik.maharashtra.gov.in" target="_blank" rel="noopener noreferrer" class="hover:text-white underline" data-i18n="footer.portalDivcom">विभागीय आयुक्त नाशिक</a></li>
+            <li><a href="https://nmc.gov.in" target="_blank" rel="noopener noreferrer" class="hover:text-white underline" data-i18n="footer.portalNmc">नाशिक महानगरपालिका (NMC)</a></li>
+            <li><a href="https://maharashtra.gov.in" target="_blank" rel="noopener noreferrer" class="hover:text-white underline" data-i18n="footer.portalMaha">महाराष्ट्र शासन (maharashtra.gov.in)</a></li>
+            <li><a href="https://india.gov.in" target="_blank" rel="noopener noreferrer" class="hover:text-white underline" data-i18n="footer.portalIndia">National Portal of India (india.gov.in)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white text-sm mb-3" data-i18n="footer.kdTitle">कुंभदूत AI सहाय्यक</h4>
+          <p class="text-slate-400 mb-3 leading-relaxed" data-i18n="footer.kdDesc">
+            प्रत्येक भाविकाच्या हाती स्वतःच्या भाषेत थेट मार्गदर्शन देणारा एकात्मिक शासकीय AI सहाय्यक.
+          </p>
+          <button onclick="window.openKumbhDootAssistant('general')" class="inline-flex items-center gap-1.5 text-xs font-bold text-white bg-kumbhdoot-cta hover:bg-kumbhdoot-ctaHover px-3.5 py-2 rounded-lg transition shadow">
+            <span data-i18n="footer.kdBtn">कुंभदूत AI सहाय्यक उघडा</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Official National Portals & Digital India Initiatives Strip (GIGW 3.0 Standard) -->
+      <div class="border-t border-slate-800/80 my-8 pt-6 flex flex-wrap items-center justify-center gap-4 sm:gap-8">
+        <a href="https://www.digitalindia.gov.in" target="_blank" rel="noopener noreferrer" class="bg-white hover:bg-slate-50 px-3.5 py-1.5 rounded-xl border border-slate-700 transition flex items-center shadow-sm" title="Digital India - Power To Empower (MeitY)">
+          <img src="./public/images/digital-india.png" alt="Digital India - Power To Empower" class="h-8 w-auto object-contain">
+        </a>
+        <a href="https://india.gov.in" target="_blank" rel="noopener noreferrer" class="text-xs text-slate-300 hover:text-white flex items-center gap-2 border border-slate-800 bg-slate-900/60 px-3.5 py-2 rounded-xl transition shadow-sm" title="National Portal of India">
+          <img src="./public/images/emb.jpg" alt="National Emblem of India" class="h-6 w-auto object-contain">
+          <span class="font-bold">india.gov.in</span>
+        </a>
+        <a href="https://maharashtra.gov.in" target="_blank" rel="noopener noreferrer" class="text-xs text-slate-300 hover:text-white flex items-center gap-2 border border-slate-800 bg-slate-900/60 px-3.5 py-2 rounded-xl transition shadow-sm" title="Government of Maharashtra">
+          <img src="./public/images/seal-maharashtra.png" alt="Seal of Maharashtra" class="h-6 w-auto object-contain">
+          <span class="font-bold">maharashtra.gov.in</span>
+        </a>
+      </div>
+
+            <!-- Reference Prototype Legal Notice -->
+      <div class="mt-4 pt-4 border-t border-slate-800/60 text-center">
+        <p class="text-[11px] text-slate-400 max-w-4xl mx-auto leading-relaxed" data-i18n="footer.disclaimerNotice">
+          हे संकेतस्थळ नाशिक-त्र्यंबकेश्वर सिंहस्थ २०२७ चे प्रस्तावित संदर्भ प्रारूप (Proposed Reference Design) असून शासकीय पुनरावलोकनासाठी तयार केले आहे. सर्व माहिती अंतिम शासकीय राजपत्र व अधिसूचनेच्या अधीन आहे.
+        </p>
+      </div>
+
+      <!-- Copyright & Last Updated -->
+      <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+        <span data-i18n="footer.copyright">© २०२६-२०२७ महाराष्ट्र शासन व नाशिक-त्र्यंबकेश्वर कुंभमेळा प्राधिकरण. सर्व हक्क सुरक्षित.</span>
+        <div class="flex items-center gap-3">
+          <span class="text-slate-400" data-i18n="footer.lastUpdated">शेवटचे अद्यतन: १९ ऑक्टोबर २०२६</span>
+          <span class="text-slate-600">|</span>
+          <span class="text-emerald-500 font-semibold" data-i18n="footer.gigwBadge">GIGW 3.0 मानकांनुसार अधिकृत डिझाइन</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+  <!-- ACCESSIBLE GLOBAL SEARCH MODAL (GIGW 3.0 Standard) -->
+  <div id="portal-search-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden flex items-start justify-center p-4 sm:p-6 pt-16 sm:pt-24" role="dialog" aria-modal="true" aria-labelledby="search-modal-title">
+    <div class="bg-white rounded-2xl max-w-2xl w-full border border-slate-200 shadow-2xl overflow-hidden animate-fadeIn">
+      <div class="p-4 sm:p-5 border-b border-slate-100 flex items-center justify-between gap-3">
+        <div class="flex items-center gap-2 flex-grow">
+          <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <input id="portal-search-input" type="search" placeholder="पोर्टलवर शोधा (उदा. शाही स्नान, रामकुंड, पार्किंग, आपत्कालीन मदत)..." class="w-full text-sm sm:text-base text-slate-900 placeholder-slate-400 focus:outline-none" autofocus>
+        </div>
+        <button id="close-search-modal" class="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition tap-target" aria-label="Close search">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Quick Search Shortcuts -->
+      <div class="p-4 sm:p-5 bg-slate-50/70 border-b border-slate-100">
+        <span class="text-xs font-bold text-slate-500 uppercase tracking-wider block mb-2.5">त्वरित विभाग व सेवा (Quick Sections)</span>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+          <a href="#schedule" onclick="window.closeSearchModal()" class="p-2.5 bg-white rounded-lg border border-slate-200 hover:border-amber-400 hover:bg-amber-50/50 text-xs font-bold text-slate-800 transition block">
+            शाही स्नान वेळापत्रक
+          </a>
+          <a href="#map" onclick="window.closeSearchModal()" class="p-2.5 bg-white rounded-lg border border-slate-200 hover:border-amber-400 hover:bg-amber-50/50 text-xs font-bold text-slate-800 transition block">
+            तीर्थक्षेत्र नकाशा व घाट
+          </a>
+          <a href="#transport" onclick="window.closeSearchModal()" class="p-2.5 bg-white rounded-lg border border-slate-200 hover:border-amber-400 hover:bg-amber-50/50 text-xs font-bold text-slate-800 transition block">
+            सॅटेलाइट पार्किंग व बस
+          </a>
+          <a href="#safety" onclick="window.closeSearchModal()" class="p-2.5 bg-white rounded-lg border border-slate-200 hover:border-amber-400 hover:bg-amber-50/50 text-xs font-bold text-slate-800 transition block">
+            आपत्कालीन व पोलीस मदत
+          </a>
+          <a href="#lost-found" onclick="window.closeSearchModal()" class="p-2.5 bg-white rounded-lg border border-slate-200 hover:border-amber-400 hover:bg-amber-50/50 text-xs font-bold text-slate-800 transition block">
+            हरवले-सापडले कक्ष
+          </a>
+          <a href="#volunteer" onclick="window.closeSearchModal()" class="p-2.5 bg-white rounded-lg border border-slate-200 hover:border-amber-400 hover:bg-amber-50/50 text-xs font-bold text-slate-800 transition block">
+            स्वयंसेवक नोंदणी
+          </a>
+        </div>
+      </div>
+
+      <div class="p-3 bg-white text-center text-xs text-slate-400">
+        शोधण्यासाठी कीवर्ड टाईप करा किंवा थेट विभागात जाण्यासाठी क्लिक करा.
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./src/js/map.js"></script>
+  <script src="./src/js/lost-found.js"></script>
+  <script src="./src/js/app.js"></script>
+</body>
+</html>

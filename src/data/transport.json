@@ -1,0 +1,67 @@
+{
+  "rail": {
+    "stationName_mr": "नाशिक रोड रेल्वे स्थानक (NK)",
+    "stationName_hi": "नासिक रोड रेलवे स्टेशन (NK)",
+    "stationName_en": "Nashik Road Railway Station (NK)",
+    "details_mr": "मध्य रेल्वेचे प्रमुख जंक्शन. मुंबई, पुणे, दिल्ली, वाराणसी, कोलकाता येथून विशेष कुंभमेळा गाड्या धावतील.",
+    "details_hi": "मध्य रेलवे का प्रमुख जंक्शन। मुंबई, पुणे, दिल्ली, वाराणसी एवं कोलकाता से विशेष कुंभ मेला रेलगाड़ियां संचालित होंगी।",
+    "details_en": "Central Railway's core junction. Special Kumbh Superfast trains planned connecting Varanasi, Prayagraj, Haridwar, Ujjain, Mumbai, and Delhi.",
+    "distanceToRamkund": "९ किमी (विशेष शटल बसने २० मिनिटे)",
+    "shuttleFrequency": "दर ३ ते ५ मिनिटांनी मोफत बस",
+    "source": "Central Railway & District Administration (To be verified)",
+    "lastUpdated": "18/10/2026"
+  },
+  "bus": {
+    "networkName_mr": "एसटी महामंडळ (MSRTC) विशेष कुंभ बस सेवा",
+    "networkName_hi": "एसटी महामंडल (MSRTC) विशेष कुंभ बस सेवा",
+    "networkName_en": "MSRTC Pilgrim Transit Fleet",
+    "busesCount": "३,५००+ विशेष बसेस",
+    "keyDepots_mr": "ठक्कर बाजार, महामार्ग बस स्थानक, आडगाव तात्पुरते बस पोर्ट",
+    "keyDepots_hi": "ठक्कर बाजार, महामार्ग बस स्टैंड, आडगांव अस्थायी बस पोर्ट",
+    "keyDepots_en": "Thakkar Bazaar, Mahamarg Bus Port, Adgaon Satellite Transit Port",
+    "source": "Maharashtra State Road Transport Corporation (To be verified)",
+    "lastUpdated": "18/10/2026"
+  },
+  "parkingZones": [
+    {
+      "zoneId": "P1",
+      "name_mr": "आडगाव सॅटेलाइट पार्किंग (मुंबई-धुळे महामार्ग NH-3)",
+      "name_hi": "आडगांव सैटेलाइट पार्किंग (मुंबई-धुले राष्ट्रीय राजमार्ग NH-3)",
+      "name_en": "Adgaon Satellite Parking (NH-3 Mumbai-Agra Highway)",
+      "capacity": "१२,००० वाहने",
+      "suitableFor": "उत्तर व पूर्व महाराष्ट्रातून येणारी वाहने",
+      "shuttleRoute": "आडगाव ते तपोवन शटल कॉरिडोअर"
+    },
+    {
+      "zoneId": "P2",
+      "name_mr": "अंबड व गरवारे इंडस्ट्रियल पार्किंग (पुणे-नाशिक महामार्ग NH-60)",
+      "name_hi": "अंबड एवं गरवारे पार्किंग (पुणे-नासिक राष्ट्रीय राजमार्ग NH-60)",
+      "name_en": "Ambad & Garware Hub (NH-60 Pune-Nashik Highway)",
+      "capacity": "१५,००० वाहने",
+      "suitableFor": "पुणे, बंगळुरू व दक्षिण भारतातून येणारी वाहने",
+      "shuttleRoute": "अंबड ते द्वारका ते पंचवटी शटल"
+    },
+    {
+      "zoneId": "P3",
+      "name_mr": "त्र्यंबक रोड सातपूर पार्किंग झोन",
+      "name_hi": "त्र्यंबक रोड सातपुर पार्किंग जोन",
+      "name_en": "Trimbak Road Satpur Transit Parking",
+      "capacity": "८,००० वाहने",
+      "suitableFor": "नाशिक व त्र्यंबक दरम्यान प्रवास करणारी वाहने",
+      "shuttleRoute": "सातपूर ते त्र्यंबकेश्वर बायपास शटल"
+    }
+  ],
+  "noVehicleZones": {
+    "title_mr": "पादचारी व नो-व्हेईकल झोन (पवित्र परिक्रमा क्षेत्र)",
+    "title_hi": "पैदल यात्री एवं नो-व्हीकल जोन (पवित्र परिक्रमा क्षेत्र)",
+    "title_en": "Strict Pedestrian & Zero-Vehicle Sacred Zones",
+    "timing_mr": "शाही स्नानाच्या दिवशी २४ तास लागू",
+    "timing_hi": "शाही स्नान के दिवस 24 घंटे लागू",
+    "timing_en": "Active 24 Hours on all Shahi Snan and Parv Snan days",
+    "zones_mr": "रामकुंड परिसर, गोदावरी नदी दोन्ही काठ (२ किमी परिघ), पंचवटी मुख्य मंदिरे, त्र्यंबकेश्वर कुशावर्त व मंदिर गल्ली.",
+    "zones_hi": "रामकुंड क्षेत्र, गोदावरी नदी के दोनों तट (2 किमी परिधि), पंचवटी मुख्य मंदिर, त्र्यंबकेश्वर कुशावर्त एवं मंदिर मार्ग।",
+    "zones_en": "Ramkund core basin, Godavari dual riverfront (2 km perimeter), Panchavati heritage quadrangle, Trimbakeshwar inner Parikrama.",
+    "source": "Nashik City & Rural Police (To be verified)",
+    "lastUpdated": "18/10/2026"
+  }
+}

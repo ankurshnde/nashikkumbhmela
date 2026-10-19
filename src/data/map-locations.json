@@ -1,0 +1,390 @@
+[
+  {
+    "id": "loc-1",
+    "category": "ghat",
+    "city": "Nashik",
+    "name_mr": "पवित्र रामकुंड स्नान घाट",
+    "name_hi": "पवित्र रामकुंड स्नान घाट",
+    "name_en": "Sacred Ramkund Snan Ghat",
+    "lat": 20.0055,
+    "lng": 73.7925,
+    "description_mr": "गोदावरी नदीचा मुख्य शाही स्नान घाट, जेथे प्रभु श्रीरामांनी स्नान केले होते.",
+    "description_hi": "गोदावरी नदी का मुख्य शाही स्नान घाट, जहां भगवान श्री राम ने स्नान किया था।",
+    "description_en": "Primary sacred bathing reservoir along the Godavari, central site for Shahi Snan in Nashik.",
+    "facilities": [
+      "सुरक्षा रक्षक",
+      "महिला चेंजिंग रूम",
+      "लाइफ जॅकेट्स",
+      "व्हीलचेअर रॅम्प",
+      "तातडीची वैद्यकीय मदत"
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=20.0055,73.7925",
+    "source": "Nashik Municipal Corporation & NTKMA (To be verified)",
+    "lastUpdated": "18/10/2026",
+    "facilities_mr": [
+      "सुरक्षा रक्षक",
+      "महिला चेंजिंग रूम",
+      "लाइफ जॅकेट्स",
+      "व्हीलचेअर रॅम्प",
+      "तातडीची वैद्यकीय मदत"
+    ],
+    "facilities_hi": [
+      "सुरक्षा गार्ड",
+      "महिला चेंजिंग रूम",
+      "लाइफ जैकेट्स",
+      "व्हीलचेयर रैंप",
+      "आपातकालीन चिकित्सा सहायता"
+    ],
+    "facilities_en": [
+      "Security Guards",
+      "Women's Changing Rooms",
+      "Life Jackets",
+      "Wheelchair Ramp",
+      "Emergency Medical Post"
+    ]
+  },
+  {
+    "id": "loc-2",
+    "category": "ghat",
+    "city": "Trimbakeshwar",
+    "name_mr": "कुशावर्त तीर्थ कुंड (त्र्यंबकेश्वर)",
+    "name_hi": "कुशावर्त तीर्थ कुंड (त्र्यंबकेश्वर)",
+    "name_en": "Kushavarta Teerth Kund (Trimbakeshwar)",
+    "lat": 19.9328,
+    "lng": 73.5305,
+    "description_mr": "त्र्यंबकेश्वर जोतिर्लिंग परिसरातील शैव आखाड्यांचे मुख्य शाही स्नान तीर्थ.",
+    "description_hi": "त्र्यंबकेश्वर ज्योतिर्लिंग क्षेत्र में शैव अखाड़ों का मुख्य शाही स्नान कुंड।",
+    "description_en": "Sacred reservoir at the base of Brahmagiri where the Godavari re-emerges, focal site for Shaiva snan.",
+    "facilities": [
+      "बॅरिकेडिंग",
+      "महिला चेंजिंग कक्ष",
+      "लाइफ गार्ड्स",
+      "ध्वनिक्षेपक प्रणाली"
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=19.9328,73.5305",
+    "source": "Trimbakeshwar Municipal Council (To be verified)",
+    "lastUpdated": "18/10/2026",
+    "facilities_mr": [
+      "बॅरिकेडिंग",
+      "महिला चेंजिंग कक्ष",
+      "लाइफ गार्ड्स",
+      "ध्वनिक्षेपक प्रणाली"
+    ],
+    "facilities_hi": [
+      "बैरिकेडिंग",
+      "महिला चेंजिंग रूम",
+      "लाइफ गार्ड्स",
+      "सार्वजनिक उद्घोषणा प्रणाली"
+    ],
+    "facilities_en": [
+      "Barricades",
+      "Women's Changing Rooms",
+      "Life Guards",
+      "PA Announcement System"
+    ]
+  },
+  {
+    "id": "loc-3",
+    "category": "ghat",
+    "city": "Nashik",
+    "name_mr": "लक्ष्मण कुंड व गांधी तलाव परिसर",
+    "name_hi": "लक्ष्मण कुंड एवं गांधी तालाब क्षेत्र",
+    "name_en": "Lakshman Kund & Gandhi Talav Ghats",
+    "lat": 20.0062,
+    "lng": 73.794,
+    "description_mr": "सामान्य भाविकांच्या सुरक्षित स्नानासाठी विस्तीर्ण घाट परिसर.",
+    "description_hi": "सामान्य श्रद्धालुओं के सुरक्षित स्नान हेतु विस्तृत घाट क्षेत्र।",
+    "description_en": "Broad riverside bathing steps designated for public pilgrims to disperse density.",
+    "facilities": [
+      "स्वच्छ पिण्याचे पाणी",
+      "तात्पुरती स्वच्छतागृहे",
+      "माहिती फलक"
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=20.0062,73.7940",
+    "source": "Nashik District Administration (To be verified)",
+    "lastUpdated": "18/10/2026",
+    "facilities_mr": [
+      "स्वच्छ पिण्याचे पाणी",
+      "तात्पुरती स्वच्छतागृहे",
+      "माहिती फलक"
+    ],
+    "facilities_hi": [
+      "स्वच्छ पेयजल",
+      "अस्थायी शौचालय",
+      "सूचना पट्ट"
+    ],
+    "facilities_en": [
+      "Clean Potable Water",
+      "Temporary Restrooms",
+      "Information Boards"
+    ]
+  },
+  {
+    "id": "loc-4",
+    "category": "parking",
+    "city": "Nashik",
+    "name_mr": "आडगाव बाह्य सॅटेलाइट पार्किंग हब (P1)",
+    "name_hi": "आडगांव बाह्य सैटेलाइट पार्किंग हब (P1)",
+    "name_en": "Adgaon Outer Satellite Parking Hub (P1)",
+    "lat": 20.0385,
+    "lng": 73.842,
+    "description_mr": "मुंबई-धुळे महामार्गावरून येणाऱ्या वाहनांसाठी विशाल पार्किंग; येथून मोफत शटल बसेस.",
+    "description_hi": "मुंबई-धुले राष्ट्रीय राजमार्ग से आने वाले वाहनों हेतु विशाल पार्किंग; यहां से निःशुल्क शटल बस सेवा।",
+    "description_en": "High-capacity outer parking on NH-3 for private vehicles with continuous electric shuttle loop.",
+    "facilities": [
+      "१०,०००+ कार/बस क्षमता",
+      "विश्राम मंडप",
+      "स्वच्छतागृहे",
+      "विनामूल्य ई-बस शटल"
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=20.0385,73.8420",
+    "source": "Nashik City Traffic Police (To be verified)",
+    "lastUpdated": "18/10/2026",
+    "facilities_mr": [
+      "१०,०००+ कार/बस क्षमता",
+      "विश्राम मंडप",
+      "स्वच्छतागृहे",
+      "विनामूल्य ई-बस शटल"
+    ],
+    "facilities_hi": [
+      "१०,०००+ कार/बस क्षमता",
+      "विश्राम मंडप",
+      "शौचालय",
+      "निःशुल्क ई-बस शटल"
+    ],
+    "facilities_en": [
+      "10,000+ Car/Bus Capacity",
+      "Rest Pavilions",
+      "Restrooms",
+      "Complimentary E-Bus Shuttle"
+    ]
+  },
+  {
+    "id": "loc-5",
+    "category": "parking",
+    "city": "Trimbakeshwar",
+    "name_mr": "त्र्यंबक बायपास सॅटेलाइट पार्किंग (P4)",
+    "name_hi": "त्र्यंबक बाईपास सैटेलाइट पार्किंग (P4)",
+    "name_en": "Trimbak Bypass Satellite Parking (P4)",
+    "lat": 19.927,
+    "lng": 73.545,
+    "description_mr": "त्र्यंबकेश्वर शहराच्या बाहेर सर्व खाजगी वाहने अडवून शटलने मंदिर परिसराकडे नेण्याची व्यवस्था.",
+    "description_hi": "त्र्यंबकेश्वर शहर के बाहर सभी निजी वाहनों को रोककर शटल द्वारा मंदिर क्षेत्र तक भेजने की व्यवस्था।",
+    "description_en": "Mandatory outer parking perimeter for Trimbakeshwar to ensure zero vehicular congestion in core town.",
+    "facilities": [
+      "५,००० वाहन क्षमता",
+      "पिण्याचे पाणी केंद्र",
+      "हेल्पडेस्क"
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=19.9270,73.5450",
+    "source": "Rural Police & Transport Department (To be verified)",
+    "lastUpdated": "18/10/2026",
+    "facilities_mr": [
+      "५,००० वाहन क्षमता",
+      "पिण्याचे पाणी केंद्र",
+      "हेल्पडेस्क"
+    ],
+    "facilities_hi": [
+      "५,००० वाहन क्षमता",
+      "पेयजल केंद्र",
+      "हेल्पडेस्क"
+    ],
+    "facilities_en": [
+      "5,000 Vehicle Capacity",
+      "Drinking Water Stations",
+      "Helpdesk"
+    ]
+  },
+  {
+    "id": "loc-6",
+    "category": "shuttle",
+    "city": "Nashik",
+    "name_mr": "नाशिक रोड रेल्वे स्टेशन शटल पिकअप पॉईंट",
+    "name_hi": "नासिक रोड रेलवे स्टेशन शटल पिकअप पॉइंट",
+    "name_en": "Nashik Road Railway Station Shuttle Pickup Hub",
+    "lat": 19.9575,
+    "lng": 73.834,
+    "description_mr": "रेल्वेने येणाऱ्या भाविकांसाठी थेट पंचवटी व तपोवन घाटाकडे जाणाऱ्या मोफत शटल बसेस.",
+    "description_hi": "ट्रेन से आने वाले श्रद्धालुओं हेतु सीधे पंचवटी व तपोवन घाट जाने वाली निःशुल्क बस सेवा।",
+    "description_en": "Primary rail transit terminal connecting trains with non-stop direct pilgrim shuttle corridors.",
+    "facilities": [
+      "२४x७ बस सेवा",
+      "हेल्पडेस्क",
+      "व्हीलचेअर सहाय्य",
+      "लागेज क्लॉक रूम"
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=19.9575,73.8340",
+    "source": "MSRTC & Indian Railways (To be verified)",
+    "lastUpdated": "18/10/2026",
+    "facilities_mr": [
+      "२४x७ बस सेवा",
+      "हेल्पडेस्क",
+      "व्हीलचेअर सहाय्य",
+      "लागेज क्लॉक रूम"
+    ],
+    "facilities_hi": [
+      "२४x७ बस सेवा",
+      "हेल्पडेस्क",
+      "व्हीलचेयर सहायता",
+      "क्लॉक रूम"
+    ],
+    "facilities_en": [
+      "24x7 Shuttle Service",
+      "Helpdesk",
+      "Wheelchair Assistance",
+      "Luggage Cloakroom"
+    ]
+  },
+  {
+    "id": "loc-7",
+    "category": "medical",
+    "city": "Nashik",
+    "name_mr": "पंचवटी मध्यवर्ती आपत्कालीन वैद्यकीय केंद्र (M1)",
+    "name_hi": "पंचवटी केंद्रीय आपातकालीन चिकित्सा केंद्र (M1)",
+    "name_en": "Panchavati Central Emergency Medical Center (M1)",
+    "lat": 20.007,
+    "lng": 73.796,
+    "description_mr": "रामकुंड घाटाजवळ १०० खाटांचे तात्पुरते सुसज्ज रुग्णालय व आयसीयू ॲम्ब्युलन्स बेस.",
+    "description_hi": "रामकुंड घाट के निकट 100 बिस्तरों का अस्थायी सर्वसुविधायुक्त अस्पताल एवं आईसीयू एम्बुलेंस बेस।",
+    "description_en": "100-bed field hospital equipped with triage, cardiac support, oxygen, and green-corridor ambulance bay.",
+    "facilities": [
+      "कार्डियाक सपोर्ट",
+      "२० ॲम्ब्युलन्स स्टँडबाय",
+      "मोफत औषधे",
+      "स्त्रीरोग तज्ज्ञ"
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=20.0070,73.7960",
+    "source": "District Civil Surgeon Office (To be verified)",
+    "lastUpdated": "18/10/2026",
+    "facilities_mr": [
+      "कार्डियाक सपोर्ट",
+      "२० ॲम्ब्युलन्स स्टँडबाय",
+      "मोफत औषधे",
+      "स्त्रीरोग तज्ज्ञ"
+    ],
+    "facilities_hi": [
+      "कार्डियक सपोर्ट",
+      "२० एम्बुलेंस तैनात",
+      "निःशुल्क दवाएं",
+      "स्त्री रोग विशेषज्ञ"
+    ],
+    "facilities_en": [
+      "Cardiac Support",
+      "20 Ambulances on Standby",
+      "Free Medications",
+      "Gynecologist on Duty"
+    ]
+  },
+  {
+    "id": "loc-8",
+    "category": "police",
+    "city": "Nashik",
+    "name_mr": "कुंभ एकात्मिक पोलीस नियंत्रण कक्ष (C4I)",
+    "name_hi": "कुंभ एकीकृत पुलिस नियंत्रण कक्ष (C4I)",
+    "name_en": "Integrated Police Command & Drone Control Room",
+    "lat": 20.004,
+    "lng": 73.791,
+    "description_mr": "सीसीटीव्ही, ड्रोन पाळत आणि गर्दी घनता विश्लेषणासाठी मध्यवर्ती नियंत्रण कक्ष.",
+    "description_hi": "सीसीटीवी, ड्रोन निगरानी एवं भीड़ घनत्व विश्लेषण हेतु एकीकृत पुलिस नियंत्रण कक्ष।",
+    "description_en": "Unified multi-agency control room running AI crowd density sensors, drones, and emergency dispatch.",
+    "facilities": [
+      "२४x७ नियंत्रण कक्ष",
+      "महिला मदत डेस्क",
+      "लाऊडस्पीकर समन्वयन"
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=20.0040,73.7910",
+    "source": "Nashik City Police (To be verified)",
+    "lastUpdated": "18/10/2026",
+    "facilities_mr": [
+      "२४x७ नियंत्रण कक्ष",
+      "महिला मदत डेस्क",
+      "लाऊडस्पीकर समन्वयन"
+    ],
+    "facilities_hi": [
+      "२४x७ नियंत्रण कक्ष",
+      "महिला सहायता डेस्क",
+      "लाउडस्पीकर समन्वय"
+    ],
+    "facilities_en": [
+      "24x7 Control Room",
+      "Women's Helpdesk",
+      "Loudspeaker Broadcast Relay"
+    ]
+  },
+  {
+    "id": "loc-9",
+    "category": "lost_found",
+    "city": "Nashik",
+    "name_mr": "मध्यवर्ती हरवले व सापडले पुनर्मिलन केंद्र",
+    "name_hi": "केंद्रीय खोया-पाया पुनर्मिलन केंद्र",
+    "name_en": "Central Lost & Found Family Reunification Center",
+    "lat": 20.008,
+    "lng": 73.793,
+    "description_mr": "हरवलेली मुले व नातेवाईकांसाठी वातानुकूलित विश्राम कक्ष, फोटो नोंदणी व समुपदेशन केंद्र.",
+    "description_hi": "लापता बच्चों एवं परिजनों हेतु वातानुकूलित विश्राम कक्ष, फोटो पंजीकरण एवं काउंसलिंग केंद्र।",
+    "description_en": "Dedicated child-friendly reunification center with digital photo search, food, and counselor care.",
+    "facilities": [
+      "डिजिटल फोटो सर्च",
+      "बाल संगोपन कक्ष",
+      "दूध व अल्पोपहार",
+      "समुपदेशक"
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=20.0080,73.7930",
+    "source": "Department of Women & Child Development (To be verified)",
+    "lastUpdated": "18/10/2026",
+    "facilities_mr": [
+      "डिजिटल फोटो सर्च",
+      "बाल संगोपन कक्ष",
+      "दूध व अल्पोपहार",
+      "समुपदेशक"
+    ],
+    "facilities_hi": [
+      "डिजिटल फोटो खोज",
+      "बाल देखभाल कक्ष",
+      "दूध एवं अल्पाहार",
+      "परामर्शदाता"
+    ],
+    "facilities_en": [
+      "Digital Photo Search",
+      "Child Care Room",
+      "Milk & Refreshments",
+      "Counseling Staff"
+    ]
+  },
+  {
+    "id": "loc-10",
+    "category": "water_toilet",
+    "city": "Nashik",
+    "name_mr": "तपोवन अमृत जल व बायो-टॉयलेट कॉम्प्लेक्स",
+    "name_hi": "तपोवन अमृत जल एवं बायो-टॉयलेट परिसर",
+    "name_en": "Tapovan Clean Drinking Water & Bio-Toilet Complex",
+    "lat": 20.001,
+    "lng": 73.805,
+    "description_mr": "५० नळ असलेले आरओ शुद्ध पेयजल केंद्र आणि अपंगांसाठी सुलभ बायो-स्वच्छतागृहे.",
+    "description_hi": "50 नलों का आरओ शुद्ध पेयजल केंद्र एवं दिव्यांगजन हेतु सुलभ बायो-शौचालय।",
+    "description_en": "High-throughput potable water dispenser with 50 taps and Divyang-friendly accessible sanitation blocks.",
+    "facilities": [
+      "आरओ शुद्ध पाणी",
+      "दिव्यांग सुलभ टॉयलेट",
+      "सॅनिटरी पॅड वेंडिंग मशिन"
+    ],
+    "googleMapsUrl": "https://maps.google.com/?q=20.0010,73.8050",
+    "source": "Nashik Municipal Corporation Swachh Cell (To be verified)",
+    "lastUpdated": "18/10/2026",
+    "facilities_mr": [
+      "आरओ शुद्ध पाणी",
+      "दिव्यांग सुलभ टॉयलेट",
+      "सॅनिटरी पॅड वेंडिंग मशिन"
+    ],
+    "facilities_hi": [
+      "आरओ शुद्ध पेयजल",
+      "दिव्यांग सुलभ शौचालय",
+      "सैनिटरी पैड वेंडिंग मशीन"
+    ],
+    "facilities_en": [
+      "RO Purified Water",
+      "Divyang-Accessible Toilets",
+      "Sanitary Pad Dispenser"
+    ]
+  }
+]
